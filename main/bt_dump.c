@@ -552,8 +552,8 @@ void dump_number_of_completed_packets(const uint8_t* packet, uint16_t size)
 void dump_qos_setup_complete(HCI_QOS_SETUP_COMPLETE_EVENT_PACKET* packet)
 {
     printf("qos setup con_handle 0x%x status 0x%x "
-        "service_type 0x%x token_rate %u peak_bandwidth %u "
-        "latency %u delay_variation %u\n",
+        "service_type 0x%x token_rate %lu peak_bandwidth %lu "
+        "latency %lu delay_variation %lu\n",
         packet->con_handle, packet->status,
         packet->service_type, packet->token_rate, packet->peak_bandwidth,
         packet->latency, packet->delay_variation);

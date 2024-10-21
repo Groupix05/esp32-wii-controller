@@ -36,7 +36,7 @@ void handle_wii_mitm_inquiry_result(uint8_t* packet, uint16_t size)
             }
         }
 
-        printf("query addr %s psrm %u cod %06x clock_offset %04x\n", bda_to_string(addr), psrm, cod, clock_offset);
+        printf("query addr %s psrm %u cod %06lx clock_offset %04x\n", bda_to_string(addr), psrm, cod, clock_offset);
 
         post_bt_packet(create_hci_remote_name_request_packet(addr, psrm, true, clock_offset));
 
@@ -95,7 +95,7 @@ void handle_wii_mitm_remote_name_request_complete(uint8_t* packet, uint16_t size
 void handle_wii_mitm_connection_request(HCI_CONNECTION_REQUEST_EVENT_PACKET* packet)
 {
     uint32_t cod = uint24_bytes_to_uint32(packet->class_of_device);
-    printf("connection request from %s cod %06x type %u\n", bda_to_string(packet->addr), cod, packet->link_type);
+    printf("connection request from %s cod %06lx type %u\n", bda_to_string(packet->addr), cod, packet->link_type);
 
     if ((wii_controller.state == WII_MITM_PAIRING_PENDING || wii_controller.state == WII_MITM_CONNECTION_PENDING)&&
         packet->link_type == HCI_LINK_TYPE_ACL &&
