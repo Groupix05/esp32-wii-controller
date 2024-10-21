@@ -2,7 +2,7 @@
 
 bd_addr_t wii_remote_bda;
 //bd_addr_t wii_bda;
-xQueueHandle transfer_queue_handle;
+QueueHandle_t transfer_queue_handle;
 
 void wii_mitm_flush_queue();
 
