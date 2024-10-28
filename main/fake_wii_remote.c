@@ -9,7 +9,7 @@ void connect();
 void handle_fake_wii_remote_connection_request(HCI_CONNECTION_REQUEST_EVENT_PACKET* packet)
 {
     uint32_t cod = uint24_bytes_to_uint32(packet->class_of_device);
-    printf("connection request from %s cod %06x type %u\n", bda_to_string(packet->addr), cod, packet->link_type);
+    printf("connection request from %s cod %06lx type %u\n", bda_to_string(packet->addr), cod, packet->link_type);
 
     if (packet->link_type == HCI_LINK_TYPE_ACL && cod == WII_COD)
     {
@@ -570,7 +570,7 @@ void handle_fake_wii_remote_data_channel(uint16_t con_handle, HID_REPORT_PACKET*
                 {
                     WII_READ_MEMORY_AND_REGISTERS_PACKET* report_packet = (WII_READ_MEMORY_AND_REGISTERS_PACKET*)packet;
 
-                    printf("read_memory_and_registers address_space 0x%x offset 0x%x size %u\n", report_packet->address_space, bswap32(uint24_bytes_to_uint32(report_packet->offset_bytes) << 8), bswap16(report_packet->size));
+                    printf("read_memory_and_registers address_space 0x%x offset 0x%lx size %u\n", report_packet->address_space, bswap32(uint24_bytes_to_uint32(report_packet->offset_bytes) << 8), bswap16(report_packet->size));
                     break;
                 }
                 case WII_DATA_REPORTING_MODE_REPORT:

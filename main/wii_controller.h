@@ -15,7 +15,8 @@
 #include "esp_system.h"
 #include "esp_spi_flash.h"
 #include "esp_bt.h"
-#include "esp_int_wdt.h"
+#include "esp_task_wdt.h"
+#include "esp_mac.h"
 #endif
 
 //#define WII_REMOTE_HOST

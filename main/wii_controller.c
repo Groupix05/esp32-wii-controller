@@ -18,11 +18,11 @@ WII_CONTROLLER wii_controller =
     .wii_con_handle = INVALID_CON_HANDLE,
     .wii_remote_con_handle = INVALID_CON_HANDLE
 };
-xSemaphoreHandle output_queue_ready_sem;
+SemaphoreHandle_t output_queue_ready_sem;
 //xQueueHandle output_queue_handle;
 //xQueueHandle input_queue_handle;
-xQueueHandle queue_handle;
-xSemaphoreHandle all_controller_buffers_sem;
+QueueHandle_t queue_handle;
+SemaphoreHandle_t all_controller_buffers_sem;
 //xSemaphoreHandle controller_buffers_sem[2];
 #endif
 int all_controller_buffers_sem_count;
