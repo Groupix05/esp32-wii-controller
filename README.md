@@ -21,6 +21,7 @@ Select the instructions depending on Espressif chip installed on your developmen
 Then run in the project folder:
 - idf.py build
 - idf.py flash -p [COM port]
+
 optional :
 - idf.py monitor
 
