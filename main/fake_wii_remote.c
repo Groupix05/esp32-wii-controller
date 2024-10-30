@@ -5,6 +5,8 @@
 void send_disconnect(uint16_t con_handle, uint8_t reason);
 void send_power_toggle_disconnect(uint16_t con_handle);
 void connect();
+void connect_and_power_off();
+void connect_and_power_on();
 
 void handle_fake_wii_remote_connection_request(HCI_CONNECTION_REQUEST_EVENT_PACKET* packet)
 {
@@ -547,11 +549,11 @@ void continous_reporting_task(void* p)
     {
         if (data_report_id == 0x30)
         {
-            post_bt_packet(create_output_report_packet(wii_controller.wii_con_handle, wii_controller.data_cid, (uint8_t*)"\xa1\x30\x00\x00", 4));
+            post_bt_packet(create_output_report_packet(wii_controller.wii_con_handle, wii_controller.data_cid, (uint8_t*)"\xa1\x30\x00\x80", 4));
         }
         else if (data_report_id == 0x33)
         {
-            post_bt_packet(create_output_report_packet(wii_controller.wii_con_handle, wii_controller.data_cid, (uint8_t*)"\xa1\x33\x40\x00\x7f\x81\x9c\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff", 19));
+            post_bt_packet(create_output_report_packet(wii_controller.wii_con_handle, wii_controller.data_cid, (uint8_t*)"\xa1\x33\x00\x80\x7f\x81\x9c\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff", 19));
         }
         vTaskDelay(100 / portTICK_PERIOD_MS);
     }
@@ -622,7 +624,20 @@ void handle_fake_wii_mode_change(HCI_MODE_CHANGE_EVENT_PACKET* packet)
             case WII_CONSOLE_PAIRING_STARTED:
                 wii_controller.state = WII_CONSOLE_PAIRING_COMPLETE;
                 printf("pairing complete!\n");
-                send_disconnect(packet->con_handle, ERROR_CODE_REMOTE_USER_TERMINATED_CONNECTION);
+                connect();
+                if (continous_reporting_task_handle == NULL)
+                {
+                    xTaskCreate(continous_reporting_task, "continous_reporting", 8000,
+                            (void*)(uintptr_t)0x33, 1, &continous_reporting_task_handle);
+                }
+                else
+                {
+                    vTaskDelete(continous_reporting_task_handle);
+                    continous_reporting_task_handle = NULL;
+                    xTaskCreate(continous_reporting_task, "continous_reporting", 8000,
+                            (void*)(uintptr_t)0x33, 1, &continous_reporting_task_handle);
+                }
+
                 break;
             case WII_CONSOLE_POWER_OFF_CONNECTED:
                 send_power_toggle_disconnect(packet->con_handle);
