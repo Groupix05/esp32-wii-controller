@@ -13,7 +13,7 @@
 #include "endian.h"
 #include "nvs_flash.h"
 #include "esp_system.h"
-#include "esp_spi_flash.h"
+#include "spi_flash_mmap.h"
 #include "esp_bt.h"
 #include "esp_task_wdt.h"
 #include "esp_mac.h"
@@ -99,6 +99,11 @@ void dump_l2cap_config_options(uint8_t* options, uint16_t options_size);
 #define WII_BUTTON_TWO          0x0001
 
 #define WII_LED_REPORT                          0x11
+#define WII_IR_REPORT                           0x13
+#define WII_IR2_REPORT                          0x1a
+#define WII_LED_REPORT                          0x11
+#define WII_STATUS_INFORMATION_REPORT           0x15
+#define WII_WRITE_MEMORY_AND_REGISTERS_REPORT   0x16
 #define WII_DATA_REPORTING_MODE_REPORT          0x12
 #define WII_READ_MEMORY_AND_REGISTERS_REPORT    0x17
 

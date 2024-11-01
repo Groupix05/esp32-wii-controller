@@ -1,0 +1,70 @@
+--- 0x40080400: _init at ??:?
+
+load:0x40080404,len:3492
+entry 0x400805d0
+stored wii at 00:1b:ea:14:1b:9a
+waiting 30s to power off
+CMD: (04) 01 03 0c 00                                                                                                  HCI_RESET
+CMD: (04) 01 09 10 00                                                                                                  HCI_READ_BD_ADDR
+CMD: (04) 01 05 10 00                                                                                                  HCI_READ_BUFFER_SIZE
+CMD: (06) 01 0f 08 02 05 00                                                                                            HCI_WRITE_DEFAULT_LINK_POLICY_SETTINGS
+CMD: (07) 01 24 0c 03 04 25 00                                                                                         HCI_WRITE_CLASS_OF_DEVICE
+CMD: (fc) 01 13 0c f8 4e 69 6e 74 65 6e 64 6f 20 52 56 4c 2d 43 4e 54 2d 30 31 00 00 00 00 00 00 00 00 00 00 00 00 00
+           00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+           00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+           00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+           00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+           00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+           00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00                    HCI_WRITE_LOCAL_NAME
+CMD: (08) 01 3a 0c 04 01 00 8b 9e                                                                                      HCI_WRITE_CURRENT_IAC_LAP
+CMD: (05) 01 1a 0c 01 03                                                                                               HCI_WRITE_SCAN_ENABLE
+CMD: (0b) 01 33 0c 07 ff ff ff 06 00 01 00                                                                             HCI_HOST_BUFFER_SIZE
+CMD: (05) 01 31 0c 01 01                                                                                               HCI_SET_CONTROLLER_TO_HOST_FLOW_CONTROL
+CMD: (11) 01 05 04 0d 9a 1b 14 ea 1b 00 1e ff 01 00 00 80 01                                                           HCI_CREATE_CONNECTION
+EVT: (07) 04 0e 04 05 03 0c 00                                                                                         reset complete status 0x0
+EVT: (0d) 04 0e 0a 05 09 10 00 a2 d1 54 1d 19 00                                                                       read local address complete, status 0x0 addr 00:19:1d:54:d1:a2
+EVT: (0e) 04 0e 0b 05 05 10 00 fd 03 ff 09 00 04 00                                                                    buffers status 0 HC_ACL_Data_Packet_Length 1021 HC_Total_Num_ACL_Data_Packets 9
+EVT: (07) 04 0e 04 05 0f 08 00                                                                                         write_default_link_policy_settings complete status 0x0
+EVT: (07) 04 0e 04 05 24 0c 00                                                                                         write_class_of_device complete status 0x0
+EVT: (07) 04 0e 04 05 13 0c 00                                                                                         write_local_name complete status 0x0
+EVT: (07) 04 0e 04 05 3a 0c 00                                                                                         write_current_iac_lap complete status 0x0
+EVT: (07) 04 0e 04 05 1a 0c 00                                                                                         write_scan_enable complete status 0x0
+EVT: (07) 04 0e 04 05 33 0c 00                                                                                         host_buffer_size_complete complete status 0x0
+EVT: (07) 04 0e 04 05 31 0c 00                                                                                         set_controller_to_host_flow_control complete status 0x0
+EVT: (07) 04 0f 04 00 05 05 04                                                                                         HCI_CREATE_CONNECTION status 0x0
+HCI_EVENT_COMMAND_STATUS
+EVT: (09) 04 17 06 9a 1b 14 ea 1b 00                                                                                   HCI_EVENT_LINK_KEY_REQUEST
+HCI_EVENT_LINK_KEY_REQUEST
+link key request from 00:1b:ea:14:1b:9a...
+returning stored link key 2e 93 81 b9 77 ab dc bd 02 56 a6 11 8e 06 f7 db
+CMD: (1a) 01 0b 04 16 9a 1b 14 ea 1b 00 2e 93 81 b9 77 ab dc bd 02 56 a6 11 8e 06 f7 db                                HCI_LINK_KEY_REQUEST_REPLY
+EVT: (0d) 04 0e 0a 05 0b 04 00 9a 1b 14 ea 1b 00                                                                       hci_link_key_request_reply addr 00:1b:ea:14:1b:9a status 0x0
+EVT: (0e) 04 03 0b 00 81 00 9a 1b 14 ea 1b 00 01 00                                                                    connection complete addr 00:1b:ea:14:1b:9a status 0x00 con_handle 0x81, link_type 1 encrypted 0
+HCI_EVENT_CONNECTION_COMPLETE
+EVT: (06) 04 1b 03 81 00 05                                                                                            max slots changed handle 0x81 lmp_max_slots 5
+HCI_EVENT_MAX_SLOTS_CHANGED
+CMD: (07) 01 06 04 03 81 00 15                                                                                         HCI_DISCONNECT
+EVT: (07) 04 0f 04 00 05 06 04                                                                                         HCI_DISCONNECT status 0x0
+HCI_EVENT_COMMAND_STATUS
+EVT: (07) 04 05 04 00 81 00 16                                                                                         disconnected handle 0x0081 status 0x0 reason 0x16
+HCI_EVENT_DISCONNECTION_COMPLETE
+powering off...
+CMD: (11) 01 05 04 0d 9a 1b 14 ea 1b 00 1e ff 01 00 00 80 01                                                           HCI_CREATE_CONNECTION
+CMD: (11) 01 05 04 0d 9a 1b 14 ea 1b 00 1e ff 01 00 00 80 01                                                           HCI_CREATE_CONNECTION
+EVT: (07) 04 0f 04 00 05 05 04                                                                                         HCI_CREATE_CONNECTION status 0x0
+HCI_EVENT_COMMAND_STATUS
+EVT: (07) 04 0f 04 0c 05 05 04                                                                                         HCI_CREATE_CONNECTION status 0xc
+HCI_EVENT_COMMAND_STATUS
+EVT: (0b) 04 12 08 00 9a 1b 14 ea 1b 00 01                                                                             role change for 00:1b:ea:14:1b:9a status 0x0 new_role 1
+HCI_EVENT_ROLE_CHANGE
+EVT: (0e) 04 03 0b 00 81 00 9a 1b 14 ea 1b 00 01 00                                                                    connection complete addr 00:1b:ea:14:1b:9a status 0x00 con_handle 0x81, link_type 1 encrypted 0
+HCI_EVENT_CONNECTION_COMPLETE
+wii is on
+EVT: (06) 04 1b 03 81 00 05                                                                                            max slots changed handle 0x81 lmp_max_slots 5
+HCI_EVENT_MAX_SLOTS_CHANGED
+CMD: (07) 01 06 04 03 81 00 13                                                                                         HCI_DISCONNECT
+EVT: (07) 04 0f 04 00 05 06 04                                                                                         HCI_DISCONNECT status 0x0
+HCI_EVENT_COMMAND_STATUS
+EVT: (07) 04 05 04 00 81 00 16                                                                                         disconnected handle 0x0081 status 0x0 reason 0x16
+HCI_EVENT_DISCONNECTION_COMPLETE
+

@@ -5,8 +5,6 @@
 void send_disconnect(uint16_t con_handle, uint8_t reason);
 void send_power_toggle_disconnect(uint16_t con_handle);
 void connect();
-void connect_and_power_off();
-void connect_and_power_on();
 
 void handle_fake_wii_remote_connection_request(HCI_CONNECTION_REQUEST_EVENT_PACKET* packet)
 {
@@ -624,20 +622,9 @@ void handle_fake_wii_mode_change(HCI_MODE_CHANGE_EVENT_PACKET* packet)
             case WII_CONSOLE_PAIRING_STARTED:
                 wii_controller.state = WII_CONSOLE_PAIRING_COMPLETE;
                 printf("pairing complete!\n");
-                connect();
-                if (continous_reporting_task_handle == NULL)
-                {
-                    xTaskCreate(continous_reporting_task, "continous_reporting", 8000,
-                            (void*)(uintptr_t)0x33, 1, &continous_reporting_task_handle);
-                }
-                else
-                {
-                    vTaskDelete(continous_reporting_task_handle);
-                    continous_reporting_task_handle = NULL;
-                    xTaskCreate(continous_reporting_task, "continous_reporting", 8000,
-                            (void*)(uintptr_t)0x33, 1, &continous_reporting_task_handle);
-                }
-
+                printf("storing wii address %s\n", bda_to_string(wii_addr));
+                nvs_set_blob(wii_controller.nvs_handle, WII_ADDR_BLOB_NAME, wii_addr, BDA_SIZE);
+                send_disconnect(packet->con_handle, ERROR_CODE_REMOTE_USER_TERMINATED_CONNECTION);
                 break;
             case WII_CONSOLE_POWER_OFF_CONNECTED:
                 send_power_toggle_disconnect(packet->con_handle);
@@ -766,12 +753,12 @@ void fake_wii_remote()
     esp_err_t ret = nvs_get_blob(wii_controller.nvs_handle, WII_ADDR_BLOB_NAME, wii_addr, &size);
     if (ret == ESP_OK && size == BDA_SIZE)
     {
-        // printf("stored wii at %s\n", bda_to_string(wii_addr));
-        // connect_and_power_on();
-        // printf("waiting 30s to power off\n");
-        // vTaskDelay(30000 / portTICK_PERIOD_MS);
-        // printf("powering off...\n");
-        //connect_and_power_off();
+        printf("stored wii at %s\n", bda_to_string(wii_addr));
+        connect_and_power_on();
+        printf("waiting 30s to power off\n");
+        vTaskDelay(30000 / portTICK_PERIOD_MS);
+        printf("powering off...\n");
+        connect_and_power_off();
 
         query_power_state();
     }
