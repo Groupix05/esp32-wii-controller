@@ -751,14 +751,13 @@ void fake_wii_remote()
     esp_err_t ret = nvs_get_blob(wii_controller.nvs_handle, WII_ADDR_BLOB_NAME, wii_addr, &size);
     if (ret == ESP_OK && size == BDA_SIZE)
     {
-        // printf("stored wii at %s\n", bda_to_string(wii_addr));
-        // connect_and_power_on();
-        // printf("waiting 30s to power off\n");
-        // vTaskDelay(30000 / portTICK_PERIOD_MS);
-        // printf("powering off...\n");
-        //connect_and_power_off();
+        printf("stored wii at %s\n", bda_to_string(wii_addr));
+        connect_and_power_on();
+        printf("waiting 30s to power off\n");
+        vTaskDelay(30000 / portTICK_PERIOD_MS);
+        printf("powering off...\n");
+        connect_and_power_off();
 
-        query_power_state();
     }
     else
     {

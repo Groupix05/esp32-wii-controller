@@ -1,5 +1,6 @@
 #include "wii_controller.h"
 
+
 // #ifdef WII_REMOTE_HOST
 // #define SPOOF_WIIMOTE
 // #else
@@ -8,6 +9,11 @@
 
 void app_main(void)
 {
+    //arduino setup:
+    //pinMode(2,OUTPUT);
+
+
+
     bd_addr_t addr;
 
 #if defined(SPOOF_WIIMOTE)

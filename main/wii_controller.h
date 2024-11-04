@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "Arduino.h"
 
 #if defined(_WIN32) || defined(_WIN64)
 #include <Windows.h>
