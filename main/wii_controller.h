@@ -13,7 +13,7 @@
 #include "endian.h"
 #include "nvs_flash.h"
 #include "esp_system.h"
-#include "esp_spi_flash.h"
+#include "spi_flash_mmap.h"
 #include "esp_bt.h"
 #include "esp_task_wdt.h"
 #include "esp_mac.h"
@@ -24,6 +24,9 @@
 
 #include "bthci.h"
 #include "btdump.h"
+
+void connect_and_power_on();
+void connect_and_power_off();
 
 void wii_controller_init();
 int queue_packet_handler(uint8_t* packet, uint16_t size);
@@ -201,3 +204,4 @@ extern bd_addr_t wii_addr;
 extern bd_addr_t device_addr;
 
 //extern portMUX_TYPE dump_mux;
+

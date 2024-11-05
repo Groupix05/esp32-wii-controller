@@ -751,6 +751,7 @@ void fake_wii_remote()
     esp_err_t ret = nvs_get_blob(wii_controller.nvs_handle, WII_ADDR_BLOB_NAME, wii_addr, &size);
     if (ret == ESP_OK && size == BDA_SIZE)
     {
+<<<<<<< Updated upstream
         // printf("stored wii at %s\n", bda_to_string(wii_addr));
         // connect_and_power_on();
         // printf("waiting 30s to power off\n");
@@ -759,6 +760,9 @@ void fake_wii_remote()
         //connect_and_power_off();
 
         query_power_state();
+=======
+        printf("stored wii at %s\n", bda_to_string(wii_addr));
+>>>>>>> Stashed changes
     }
     else
     {
