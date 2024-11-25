@@ -1,4 +1,5 @@
 #include "wii_controller.h"
+int home = 0;
 
 #ifdef _WINDOWS_
 typedef

@@ -1,4 +1,4 @@
-# ESP32 Wii Controller Arduino
+# ESP32 Wii Controller Arduino + components (unused)
 
 Connect an ESP32 to a wii or a wiimote using FreeRTOS.
 Thanks to nickbits1024 for the original work, this version is just the same but for ESP-IDF 5.3.1
@@ -20,9 +20,11 @@ Select the instructions depending on Espressif chip installed on your developmen
 
 Then run in the project folder:
 - cd components
+(rename arduino-esp32 before)
 - git clone --recursive https://github.com/espressif/arduino-esp32.git
 - cd arduino-esp32
 - git checkout 3.1.0-RC2
+(overwrite arduino-esp32 with the one from this branch)
 
 And in the root :
 - idf.py build
@@ -33,7 +35,7 @@ optional :
 
 ## How to use
 
-? I need help for this part
+Press BOOT button to see the menu home
 
 ## Technical support and feedback
 

@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "Arduino.h"
 
 #if defined(_WIN32) || defined(_WIN64)
 #include <Windows.h>
@@ -14,7 +13,7 @@
 #include "endian.h"
 #include "nvs_flash.h"
 #include "esp_system.h"
-#include "esp_spi_flash.h"
+#include "spi_flash_mmap.h"
 #include "esp_bt.h"
 #include "esp_task_wdt.h"
 #include "esp_mac.h"
@@ -101,7 +100,10 @@ void dump_l2cap_config_options(uint8_t* options, uint16_t options_size);
 
 #define WII_LED_REPORT                          0x11
 #define WII_DATA_REPORTING_MODE_REPORT          0x12
+#define WII_SPEAKER_ENABLE                      0x14
+#define WII_STATUS_INFORMATION_REPORT           0x15
 #define WII_READ_MEMORY_AND_REGISTERS_REPORT    0x17
+#define WII_SPEAKER_MUTE                        0x19
 
 #define WII_REMOTE_LED_1        0x10
 #define WII_REMOTE_LED_2        0x20
@@ -200,5 +202,6 @@ extern WII_CONTROLLER wii_controller;
 //extern xSemaphoreHandle all_controller_buffers_sem;
 extern bd_addr_t wii_addr;
 extern bd_addr_t device_addr;
+extern int home;
 
 //extern portMUX_TYPE dump_mux;

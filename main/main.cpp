@@ -1,5 +1,18 @@
-#include "wii_controller.h"
+#include "Arduino.h"
+#include "Wire.h"
+#include "Adafruit_GFX.h"
+#include "Adafruit_SSD1306.h"
+#include "Adafruit_ADXL345_U.h"
+#include "Adafruit_Sensor.h"
+#include "VL53L1X.h"
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
+void ArduinoSetup();
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+#include "wii_controller.h"
 
 // #ifdef WII_REMOTE_HOST
 // #define SPOOF_WIIMOTE
@@ -10,9 +23,7 @@
 void app_main(void)
 {
     //arduino setup:
-    //pinMode(2,OUTPUT);
-
-
+    ArduinoSetup();
 
     bd_addr_t addr;
 
@@ -72,7 +83,36 @@ void app_main(void)
 #elif defined(WII_MITM)
     wii_mitm();
 #else
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
     fake_wii_remote();
+
+    char button_press = 0;
+    while(1)
+    {
+        if((digitalRead(0) == LOW)&&(button_press==0))
+        {
+            button_press = 1;
+            home=1;
+            digitalWrite(2,HIGH);
+        }
+        else if(digitalRead(0) == HIGH)
+        {
+            button_press=0;
+            home=0;
+            digitalWrite(2,LOW);
+        }
+    }
+#endif
+}
+#ifdef __cplusplus
+}
 #endif
 
+void ArduinoSetup()
+{
+    pinMode(2,OUTPUT);
+    digitalWrite(2,LOW);
+    pinMode(0,INPUT);
+    //Wire.begin();
+    pinMode(14,INPUT); //Bouton Stick
 }
