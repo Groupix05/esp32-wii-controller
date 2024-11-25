@@ -1,52 +1,34 @@
-# Hello World Example
+# ESP32 Wii Controller Testing
 
-Starts a FreeRTOS task to print "Hello World".
+Connect an ESP32 to a wii or a wiimote using FreeRTOS.
+Thanks to nickbits1024 for the original work, this version is just the same but for ESP-IDF 5.3.1
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+## Tools used :
 
-## How to use example
+- ESP-IDF v5.3.1
+- Python 3.11.7
+- ESP32 Dev Module NodeMCU from Joy-It
 
-Follow detailed instructions provided specifically for this example. 
+## How to build
+
+Install ESP-IDF :
 
 Select the instructions depending on Espressif chip installed on your development board:
 
 - [ESP32 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/stable/get-started/index.html)
 - [ESP32-S2 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/get-started/index.html)
 
+Then run in the project folder:
+- idf.py build
+- idf.py flash -p [COM port]
 
-## Example folder contents
+optional :
+- idf.py monitor
 
-The project **hello_world** contains one source file in C language [hello_world_main.c](main/hello_world_main.c). The file is located in folder [main](main).
+## How to use
 
-ESP-IDF projects are build using CMake. The project build configuration is contained in `CMakeLists.txt` files that provide set of directives and instructions describing the project's source files and targets (executable, library, or both). 
-
-Below is short explanation of remaining files in the project folder.
-
-```
-├── CMakeLists.txt
-├── example_test.py            Python script used for automated example testing
-├── main
-│   ├── CMakeLists.txt
-│   ├── component.mk           Component make file
-│   └── hello_world_main.c
-├── Makefile                   Makefile used by legacy GNU Make
-└── README.md                  This is the file you are currently reading
-```
-
-For more information on structure and contents of ESP-IDF projects, please refer to Section [Build System](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/build-system.html) of the ESP-IDF Programming Guide.
-
-## Troubleshooting
-
-* Program upload failure
-
-    * Hardware connection is not correct: run `idf.py -p PORT monitor`, and reboot your board to see if there are any output logs.
-    * The baud rate for downloading is too high: lower your baud rate in the `menuconfig` menu, and try again.
+Just power your ESP32, then press the wii sync button and see home button in action.
 
 ## Technical support and feedback
 
-Please use the following feedback channels:
-
-* For technical queries, go to the [esp32.com](https://esp32.com/) forum
-* For a feature request or bug report, create a [GitHub issue](https://github.com/espressif/esp-idf/issues)
-
-We will get back to you as soon as possible.
+Feel free to ask in the issues tab. 

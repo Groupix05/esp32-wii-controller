@@ -99,13 +99,11 @@ void dump_l2cap_config_options(uint8_t* options, uint16_t options_size);
 #define WII_BUTTON_TWO          0x0001
 
 #define WII_LED_REPORT                          0x11
-#define WII_IR_REPORT                           0x13
-#define WII_IR2_REPORT                          0x1a
-#define WII_LED_REPORT                          0x11
-#define WII_STATUS_INFORMATION_REPORT           0x15
-#define WII_WRITE_MEMORY_AND_REGISTERS_REPORT   0x16
 #define WII_DATA_REPORTING_MODE_REPORT          0x12
+#define WII_SPEAKER_ENABLE                      0x14
+#define WII_STATUS_INFORMATION_REPORT           0x15
 #define WII_READ_MEMORY_AND_REGISTERS_REPORT    0x17
+#define WII_SPEAKER_MUTE                        0x19
 
 #define WII_REMOTE_LED_1        0x10
 #define WII_REMOTE_LED_2        0x20
