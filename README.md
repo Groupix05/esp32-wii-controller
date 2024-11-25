@@ -23,6 +23,7 @@ Then run in the project folder:
 - git clone --recursive https://github.com/espressif/arduino-esp32.git
 - cd arduino-esp32
 - git checkout 3.1.0-RC2
+
 And in the root :
 - idf.py build
 - idf.py flash -p [COM port]
