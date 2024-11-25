@@ -20,9 +20,15 @@ Select the instructions depending on Espressif chip installed on your developmen
 
 Then run in the project folder:
 - cd components
+  
+  (change the arduino-esp32 name before doing git clone)
 - git clone --recursive https://github.com/espressif/arduino-esp32.git
 - cd arduino-esp32
 - git checkout 3.1.0-RC2
+
+  (replace the files created with this arduino-esp32)
+  
+And in the root :
 - idf.py build
 - idf.py flash -p [COM port]
 
