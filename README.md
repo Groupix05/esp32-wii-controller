@@ -20,11 +20,13 @@ Select the instructions depending on Espressif chip installed on your developmen
 
 Then run in the project folder:
 - cd components
-(rename arduino-esp32 before)
+  
+  (rename arduino-esp32 before)
 - git clone --recursive https://github.com/espressif/arduino-esp32.git
 - cd arduino-esp32
 - git checkout 3.1.0-RC2
-(overwrite arduino-esp32 with the one from this branch)
+  
+  (overwrite arduino-esp32 with the one from this branch)
 
 And in the root :
 - idf.py build
