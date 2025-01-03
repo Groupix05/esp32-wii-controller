@@ -9,6 +9,11 @@ Electrical Plan and PCB made entirely by Geekoje.
 
 ## What is inside this kicad
 
-- ADXL345
-- ESP32
-- Others I dont remember rn
+- ESP32 Dev Module NodeMCU from JoyIt
+- Accelerometer ADXL345
+- OLED Screen SSD1306
+- Distance Sensor VL53L1X
+- JOYSTICK ADA512
+- 8 buttons
+- 4 Green LEDS
+- resistors (check pdf)
