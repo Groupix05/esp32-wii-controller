@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Build and Flash ESP32
+Comment=Lancer la construction et le flash du projet ESP32
+Exec=konsole --noclose -e "/home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/UploadAndMonitor.sh"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=Utility;
+

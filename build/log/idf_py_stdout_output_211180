@@ -1,0 +1,226 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;31mE (151) esp_image: invalid segment length 0xffffffff[0m
+[0;31mE (151) boot: Factory app partition is not bootable[0m
+[0;31mE (151) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;31mE (180) esp_image: invalid segment length 0xffffffff[0m
+[0;31mE (180) boot: Factory app partition is not bootable[0m
+[0;31mE (180) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;31mE (180) esp_image: invalid segment length 0xffffffff[0m
+[0;31mE (180) boot: Factory app partition is not bootable[0m
+[0;31mE (180) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;31mE (180) esp_image: invalid segment length 0xffffffff[0m
+[0;31mE (180) boot: Factory app partition is not bootable[0m
+[0;31mE (180) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;31mE (180) esp_image: invalid segment length 0xffffffff[0m
+[0;31mE (180) boot: Factory app partition is not bootable[0m
+[0;31mE (180) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;31mE (180) esp_image: invalid segment length 0xffffffff[0m
+[0;31mE (180) boot: Factory app partition is not bootable[0m
+[0;31mE (180) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;31mE (180) esp_image: invalid segment length 0xffffffff[0m
+[0;31mE (180) boot: Factory app partition is not bootable[0m
+[0;31mE (180) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;31mE (180) esp_image: invalid segment length 0xffffffff[0m
+[0;31mE (180) boot: Factory app partition is not bootable[0m
+[0;31mE (180) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;31mE (180) esp_image: invalid segment length 0xffffffff[0m
+[0;31mE (180) boot: Factory app partition is not bootable[0m
+[0;31mE (180) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;31mE (180) esp_image: invalid segment length 0xffffffff[0m
+[0;31mE (180) boot: Factory app partition is not bootable[0m
+[0;31mE (180) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+csum err:0x22!=0x3e
+ets_main.c 384 
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;33mW (62) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (62) boot.esp32: WDT reset info: PRO CPU PC=0x400798bd[0m
+[0;33mW (63) boot.esp32: WDT reset info: APP CPU PC=0x51789f73[0m
+[0;31mE (189) esp_image: invalid segment length 0xffffffff[0m
+[0;31mE (189) boot: Factory app partition is not bootable[0m
+[0;31mE (189) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;31mE (180) esp_image: invalid segment length 0xffffffff[0m
+[0;31mE (180) boot: Factory app partition is not bootable[0m
+[0;31mE (180) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;31mE (180) esp_image: invalid segment length 0xffffffff[0m
+[0;31mE (180) boot: Factory app partition is not bootable[0m
+[0;31mE (180) boot: No bootable app partitions in the partition table[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x3 (SW_RESET),boot:0x37 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:5940
+load:0x40078000,len:15136
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;31mE (180) esp_image: invalid segment length 0xffffffff[0m
+[0;31mE (180) boot: Factory app partition is not bootable[0m
+[0;31mE (180) boot:

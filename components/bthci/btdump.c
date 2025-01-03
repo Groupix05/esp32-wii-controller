@@ -6,6 +6,7 @@
 #include "btdump.h"
 
 static void dump_l2cap_config_options(uint8_t* options, uint16_t options_size);
+char is_connected=0;
 
 const char* bda_to_string(const bd_addr_t bda)
 {
@@ -19,8 +20,7 @@ const char* bda_to_string(const bd_addr_t bda)
 
     char* p = &addr[core][0];
 
-    //snprintf(p, 18, "%02x:%02x:%02x:%02x:%02x:%02x", bda[0], bda[1], bda[2], bda[3], bda[4], bda[5]);
-    snprintf(p, 18, "%02x:%02x:%02x:%02x:%02x:%02x", bda[5], bda[4], bda[3], bda[2], bda[1], bda[0]);
+    //snprintf(p, 18, "%02x:%02x:%02x:%02x:%02x:%02x", bda[5], bda[4], bda[3], bda[2], bda[1], bda[0]);
 
     return p;
 }
@@ -379,95 +379,95 @@ const char* get_hci_op_code_name(uint16_t op_code)
 
 void dump_reset_complete(HCI_RESET_COMPLETE_PACKET* packet)
 {
-    printf("reset complete status 0x%x\n", packet->status);
+    //printf("reset complete status 0x%x\n", packet->status);
 }
 
 void dump_read_bd_addr_complete(HCI_AUTH_READ_BD_ADDR_COMPLETE_PACKET* packet)
 {
-    printf("read local address complete, status 0x%x addr %s\n", packet->status, bda_to_string(packet->addr));
+    //printf("read local address complete, status 0x%x addr %s\n", packet->status, bda_to_string(packet->addr));
 }
 
 void dump_read_buffer_size_complete(HCI_READ_BUFFER_SIZE_COMPLETE_PACKET* packet)
 {
-    printf("buffers status %x HC_ACL_Data_Packet_Length %u HC_Total_Num_ACL_Data_Packets %u\n", packet->status, packet->hc_acl_data_packet_length, packet->hc_total_num_acl_data_packets);
+    //printf("buffers status %x HC_ACL_Data_Packet_Length %u HC_Total_Num_ACL_Data_Packets %u\n", packet->status, packet->hc_acl_data_packet_length, packet->hc_total_num_acl_data_packets);
 }
 
 void dump_read_simple_pairing_mode_complete(HCI_READ_SIMPLE_PAIRING_MODE_COMPLETE_PACKET* packet)
 {
-    printf("read simple pairing mode complete, status 0x%x mode %u\n", packet->status, packet->simple_pairing_mode);
+    //printf("read simple pairing mode complete, status 0x%x mode %u\n", packet->status, packet->simple_pairing_mode);
 }
 
 void dump_read_local_name_complete(HCI_READ_LOCAL_NAME_COMPLETE_PACKET* packet)
 {
     char local_name[HCI_MAX_LOCAL_NAME_SIZE + 1] = { };
     memcpy(local_name, packet->local_name, HCI_MAX_LOCAL_NAME_SIZE);
-    printf("read local name complete, status 0x%x name %s\n", packet->status, local_name);
+    //printf("read local name complete, status 0x%x name %s\n", packet->status, local_name);
 }
 
 void dump_auth_code_complete(HCI_AUTH_CODE_COMPLETE_PACKET* packet, const char* name)
 {
-    printf("%s addr %s status 0x%x\n", name, bda_to_string(packet->addr), packet->status);
+    //printf("%s addr %s status 0x%x\n", name, bda_to_string(packet->addr), packet->status);
 }
 
 void dump_write_scan_enable_complete(HCI_WRITE_SCAN_ENABLE_COMPLETE_PACKET* packet)
 {
-    printf("write_scan_enable complete status 0x%x\n", packet->status);
+    //printf("write_scan_enable complete status 0x%x\n", packet->status);
 }
 
 void dump_write_class_of_device_complete(HCI_WRITE_CLASS_OF_DEVICE_COMPLETE_PACKET* packet)
 {
-    printf("write_class_of_device complete status 0x%x\n", packet->status);
+    //printf("write_class_of_device complete status 0x%x\n", packet->status);
 }
 
 void dump_write_local_name_complete(HCI_WRITE_LOCAL_NAME_COMPLETE_PACKET* packet)
 {
-    printf("write_local_name complete status 0x%x\n", packet->status);
+    //printf("write_local_name complete status 0x%x\n", packet->status);
 }
 
 void dump_write_current_iac_lap_complete(HCI_WRITE_CURRENT_IAC_LAP_COMPLETE_PACKET* packet)
 {
-    printf("write_current_iac_lap complete status 0x%x\n", packet->status);
+    //printf("write_current_iac_lap complete status 0x%x\n", packet->status);
 }
 
 void dump_write_authentication_enable_complete(HCI_WRITE_AUTHENTICATION_ENABLE_COMPLETE_PACKET* packet)
 {
-    printf("write_authentication_enable complete status 0x%x\n", packet->status);
+    //printf("write_authentication_enable complete status 0x%x\n", packet->status);
 }
 
 void dump_write_encryption_mode_complete(HCI_WRITE_ENCRYPTION_MODE_COMPLETE_PACKET* packet)
 {
-    printf("write_encryption_mode complete status 0x%x\n", packet->status);
+    //printf("write_encryption_mode complete status 0x%x\n", packet->status);
 }
 
 void dump_write_default_link_policy_settings_complete(HCI_WRITE_DEFAULT_LINK_POLICY_SETTINGS_COMPLETE_PACKET* packet)
 {
-    printf("write_default_link_policy_settings complete status 0x%x\n", packet->status);
+    //printf("write_default_link_policy_settings complete status 0x%x\n", packet->status);
 }
 
 void dump_write_secure_connections_host_support_complete(HCI_WRITE_SECURE_CONNECTION_HOST_SUPPORT_COMPLETE_PACKET* packet)
 {
-    printf("write_secure_connections_host_support complete status 0x%x\n", packet->status);
+    //printf("write_secure_connections_host_support complete status 0x%x\n", packet->status);
 }
 
 void dump_write_pin_type(HCI_WRITE_PIN_TYPE_COMPLETE_PACKET* packet)
 {
-    printf("handle_write_pin_type complete status 0x%x\n", packet->status);
+    //printf("handle_write_pin_type complete status 0x%x\n", packet->status);
 }
 
 void dump_set_controller_to_host_flow_control(HCI_SET_CONTROLLER_TO_HOST_FLOW_CONTROL_COMPLETE_PACKET* packet)
 {
-    printf("set_controller_to_host_flow_control complete status 0x%x\n", packet->status);
+    //printf("set_controller_to_host_flow_control complete status 0x%x\n", packet->status);
 }
 
 void dump_host_buffer_size_complete(HCI_HOST_BUFFER_SIZE_COMPLETE_PACKET* packet)
 {
-    printf("host_buffer_size_complete complete status 0x%x\n", packet->status);
+    //printf("host_buffer_size_complete complete status 0x%x\n", packet->status);
 }
 
 
 void dump_command(HCI_COMMAND_PACKET* packet)
 {
-    printf("%s\n", get_hci_op_code_name(packet->op_code));
+    //printf("%s\n", get_hci_op_code_name(packet->op_code));
 }
 
 void dump_command_complete(HCI_COMMAND_COMPLETE_EVENT_PACKET* packet)
@@ -517,7 +517,7 @@ void dump_command_complete(HCI_COMMAND_COMPLETE_EVENT_PACKET* packet)
             dump_write_authentication_enable_complete((HCI_WRITE_AUTHENTICATION_ENABLE_COMPLETE_PACKET*)packet);
             break;
         case HCI_OPCODE_SET_CONNECTION_ENCRYPTION:
-            printf("set_connection_encryption complete\n"); // no params
+            //printf("set_connection_encryption complete\n"); // no params
             break;
         case HCI_OPCODE_WRITE_DEFAULT_LINK_POLICY_SETTINGS:
             dump_write_default_link_policy_settings_complete((HCI_WRITE_DEFAULT_LINK_POLICY_SETTINGS_COMPLETE_PACKET*)packet);
@@ -538,14 +538,14 @@ void dump_command_complete(HCI_COMMAND_COMPLETE_EVENT_PACKET* packet)
             dump_host_buffer_size_complete((HCI_HOST_BUFFER_SIZE_COMPLETE_PACKET*)packet);
             break;
         default:
-            printf("unhandled command complete 0x%04x\n", packet->op_code);
+            //printf("unhandled command complete 0x%04x\n", packet->op_code);
             break;
     }
 }
 
 void dump_command_status(HCI_COMMAND_STATUS_EVENT_PACKET* packet)
 {
-    printf("%s status 0x%x\n", get_hci_op_code_name(packet->op_code), packet->status);
+    //printf("%s status 0x%x\n", get_hci_op_code_name(packet->op_code), packet->status);
 }
 
 void dump_number_of_completed_packets(const uint8_t* packet, uint16_t size)
@@ -553,112 +553,112 @@ void dump_number_of_completed_packets(const uint8_t* packet, uint16_t size)
     uint8_t num_handles = packet[3];
     const uint8_t* p = packet + 4;
 
-    printf("number_of_completed_packets");
+    //printf("number_of_completed_packets");
     for (int i = 0; i < num_handles; i++)
     {
-        uint16_t con_handle = read_uint16(p);
-        uint16_t num_completed = read_uint16(p + 2);
+        //uint16_t con_handle = read_uint16(p);
+        //uint16_t num_completed = read_uint16(p + 2);
 
-        printf(" handle 0x%x completed %u", con_handle, num_completed);
+        //printf(" handle 0x%x completed %u", con_handle, num_completed);
 
         p += 4;
     }
-    printf("\n");
+    //printf("\n");
 }
 
 void dump_qos_setup_complete(HCI_QOS_SETUP_COMPLETE_EVENT_PACKET* packet)
 {
-    printf("qos setup con_handle 0x%x status 0x%x "
-        "service_type 0x%x token_rate %lu peak_bandwidth %lu "
-        "latency %lu delay_variation %lu\n",
-        packet->con_handle, packet->status,
-        packet->service_type, packet->token_rate, packet->peak_bandwidth,
-        packet->latency, packet->delay_variation);
+   // printf("qos setup con_handle 0x%x status 0x%x "
+   //     "service_type 0x%x token_rate %lu peak_bandwidth %lu "
+   //     "latency %lu delay_variation %lu\n",
+   //     packet->con_handle, packet->status,
+   //     packet->service_type, packet->token_rate, packet->peak_bandwidth,
+   //     packet->latency, packet->delay_variation);
 }
 
 void dump_max_slots_changed(HCI_EVENT_MAX_SLOTS_CHANGED_EVENT_PACKET* packet)
 {
-    printf("max slots changed handle 0x%x lmp_max_slots %u\n", packet->con_handle, packet->lmp_max_slots);
+    //printf("max slots changed handle 0x%x lmp_max_slots %u\n", packet->con_handle, packet->lmp_max_slots);
 }
 
 void dump_role_change(HCI_ROLE_CHANGE_EVENT_PACKET* packet)
 {
-    printf("role change for %s status 0x%x new_role %u\n", bda_to_string(packet->addr), packet->status, packet->new_role);
+    //printf("role change for %s status 0x%x new_role %u\n", bda_to_string(packet->addr), packet->status, packet->new_role);
 }
 
 void dump_link_key_notification(HCI_LINK_KEY_NOTIFICATION_EVENT_PACKET* packet)
 {
-    printf("new link key for %s type %u", bda_to_string(packet->addr), packet->key_type);
-    for (int i = 0; i < HCI_LINK_KEY_SIZE; i++)
-    {
-        printf(" %02x", packet->link_key[i]);
-    }
-    printf("\n");
+    //printf("new link key for %s type %u", bda_to_string(packet->addr), packet->key_type);
+    //for (int i = 0; i < HCI_LINK_KEY_SIZE; i++)
+    //{
+    //    printf(" %02x", packet->link_key[i]);
+    //}
+    //printf("\n");
 }
 
 void dump_connection_complete(HCI_CONNECTION_COMPLETE_EVENT_PACKET* packet)
 {
-    printf("connection complete addr %s status 0x%02x con_handle 0x%x, link_type %u encrypted %u\n", bda_to_string(packet->addr), packet->status, packet->con_handle, packet->link_type, packet->encryption_enabled);
+    //printf("connection complete addr %s status 0x%02x con_handle 0x%x, link_type %u encrypted %u\n", bda_to_string(packet->addr), packet->status, packet->con_handle, packet->link_type, packet->encryption_enabled);
 }
 
 void dump_disconnection_complete(HCI_DISCONNECTION_COMPLETE_EVENT_PACKET* packet)
 {
-    printf("disconnected handle 0x%04x status 0x%x reason 0x%x\n", packet->con_handle, packet->status, packet->reason);
+    //printf("disconnected handle 0x%04x status 0x%x reason 0x%x\n", packet->con_handle, packet->status, packet->reason);
 }
 
 void dump_encryption_change(HCI_ENCRYPTION_CHANGE_EVENT_PACKET* packet)
 {
-    printf("encryption changed status 0x%x handle 0x%x encryption_enabled %u\n", packet->status, packet->con_handle, packet->encryption_enabled);
+    //printf("encryption changed status 0x%x handle 0x%x encryption_enabled %u\n", packet->status, packet->con_handle, packet->encryption_enabled);
 }
 
 void dump_mode_change(HCI_MODE_CHANGE_EVENT_PACKET* packet)
 {
-    printf("mode changed handle 0x%x status 0x%x current_mode 0x%x interval 0x%x\n", packet->con_handle, packet->status, packet->current_mode, packet->interval);
+    //printf("mode changed handle 0x%x status 0x%x current_mode 0x%x interval 0x%x\n", packet->con_handle, packet->status, packet->current_mode, packet->interval);
 }
 
 void dump_l2cap_connection_request(L2CAP_CONNECTION_REQUEST_PACKET* packet)
 {
-    printf("l2cap connection request con_handle 0x%x id 0x%x psm 0x%x source_cid 0x%x\n", packet->con_handle, packet->identifier, packet->psm, packet->source_cid);
+    //printf("l2cap connection request con_handle 0x%x id 0x%x psm 0x%x source_cid 0x%x\n", packet->con_handle, packet->identifier, packet->psm, packet->source_cid);
 
 }
 
 void dump_l2cap_connection_response(L2CAP_CONNECTION_RESPONSE_PACKET* packet)
 {
-    printf("l2cap conn response con_handle 0x%x id 0x%x dest_cid 0x%x source_cid 0x%x result 0x%x status 0x%x\n",
-        packet->con_handle, packet->identifier, packet->dest_cid, packet->source_cid, packet->result, packet->status);
+    //printf("l2cap conn response con_handle 0x%x id 0x%x dest_cid 0x%x source_cid 0x%x result 0x%x status 0x%x\n",
+    //    packet->con_handle, packet->identifier, packet->dest_cid, packet->source_cid, packet->result, packet->status);
 }
 
 void dump_l2cap_command_reject(L2CAP_COMMAND_REJECT_PACKET* packet)
 {
-    printf("l2cap cmd rejected con_handle 0x%x id 0x%x reason 0x%02x\n", packet->con_handle, packet->identifier, packet->reason);
+    //printf("l2cap cmd rejected con_handle 0x%x id 0x%x reason 0x%02x\n", packet->con_handle, packet->identifier, packet->reason);
 }
 
 void dump_l2cap_config_request(L2CAP_CONFIG_REQUEST_PACKET* request_packet)
 {
     uint16_t options_size = request_packet->payload_size - 4;
 
-    printf("l2cap config request con_handle 0x%x id 0x%x dest_cid 0x%x options_size %u options", request_packet->con_handle, request_packet->identifier, request_packet->dest_cid, options_size);
+    //printf("l2cap config request con_handle 0x%x id 0x%x dest_cid 0x%x options_size %u options", request_packet->con_handle, request_packet->identifier, request_packet->dest_cid, options_size);
     dump_l2cap_config_options(request_packet->options, options_size);
-    printf("\n");
+    //printf("\n");
 }
 
 void dump_l2cap_config_response(L2CAP_CONFIG_RESPONSE_PACKET* packet)
 {
     uint16_t options_size = packet->payload_size - 6;
 
-    printf("l2cap config response con_handle 0x%x id 0x%x source_cid 0x%x result 0x%x options_size %u options", packet->con_handle, packet->identifier, packet->source_cid, packet->result, options_size);
+    //printf("l2cap config response con_handle 0x%x id 0x%x source_cid 0x%x result 0x%x options_size %u options", packet->con_handle, packet->identifier, packet->source_cid, packet->result, options_size);
     dump_l2cap_config_options(packet->options, options_size);
-    printf("\n");
+    //printf("\n");
 }
 
 void dump_l2cap_disconnection_request(L2CAP_DISCONNECTION_REQUEST_PACKET* packet)
 {
-    printf("l2cap disconnect request con_handle 0x%x id 0x%x dest_cid 0x%0x source_cid 0x%x\n", packet->con_handle, packet->identifier, packet->dest_cid, packet->source_cid);
+    //printf("l2cap disconnect request con_handle 0x%x id 0x%x dest_cid 0x%0x source_cid 0x%x\n", packet->con_handle, packet->identifier, packet->dest_cid, packet->source_cid);
 }
 
 void dump_l2cap_disconnection_response(L2CAP_DISCONNECTION_RESPONSE_PACKET* packet)
 {
-    printf("l2cap disconnect response con_handle 0x%x id 0x%x dest_cid 0x%0x source_cid 0x%x\n", packet->con_handle, packet->identifier, packet->dest_cid, packet->source_cid);
+    //printf("l2cap disconnect response con_handle 0x%x id 0x%x dest_cid 0x%0x source_cid 0x%x\n", packet->con_handle, packet->identifier, packet->dest_cid, packet->source_cid);
 }
 
 void dump_l2cap_signal_channel(L2CAP_SIGNAL_CHANNEL_PACKET* packet)
@@ -687,7 +687,7 @@ void dump_l2cap_signal_channel(L2CAP_SIGNAL_CHANNEL_PACKET* packet)
             dump_l2cap_disconnection_response((L2CAP_DISCONNECTION_RESPONSE_PACKET*)packet);
             break;
         default:
-            printf("unhandled signal channel code 0x%x\n", packet->code);
+            //printf("unhandled signal channel code 0x%x\n", packet->code);
             break;
     }
 }
@@ -705,18 +705,18 @@ static void dump_l2cap_config_options(uint8_t* options, uint16_t options_size)
         {
             case L2CAP_CONFIG_MTU_OPTION_TYPE:
             {
-                L2CAP_CONFIG_MTU_OPTION* mtu_option = (L2CAP_CONFIG_MTU_OPTION*)option;
-                printf(" mtu %u", mtu_option->mtu);
+                //L2CAP_CONFIG_MTU_OPTION* mtu_option = (L2CAP_CONFIG_MTU_OPTION*)option;
+                //printf(" mtu %u", mtu_option->mtu);
                 break;
             }
             case L2CAP_CONFIG_FLUSH_TIMEOUT_OPTION_TYPE:
             {
-                L2CAP_CONFIG_FLUSH_TIMEOUT_OPTION* fto_option = (L2CAP_CONFIG_FLUSH_TIMEOUT_OPTION*)option;
-                printf(" flush_timeout %u", fto_option->flush_timeout);
+                //L2CAP_CONFIG_FLUSH_TIMEOUT_OPTION* fto_option = (L2CAP_CONFIG_FLUSH_TIMEOUT_OPTION*)option;
+                //printf(" flush_timeout %u", fto_option->flush_timeout);
                 break;
             }
             default:
-                printf(" %s 0x%02x (size %u)", option_type & 0x80 ? "invalid" : "type", option_type, option_size);
+                //printf(" %s 0x%02x (size %u)", option_type & 0x80 ? "invalid" : "type", option_type, option_size);
                 break;
         }
 
@@ -753,31 +753,31 @@ void dump_packet(uint8_t io_direction, const uint8_t* packet, uint16_t size)
 
     static uint16_t last_channel[2];
 
-    for (int i = 0; i < size; i++)
-    {
-        if (i % DUMP_WIDTH == 0 && i == 0)
-        {
-            printf("%s: (%02x)", IO_DIRECTION_TAG(io_direction), size);
-        }
-        else
-        {
-            printf("          ");
-        }
-        int j = 0;
-        for (; j < DUMP_WIDTH && i < size; i++, j++)
-        {
-            printf(" %02x", packet[i]);
-        }
-        for (; j < DUMP_WIDTH; j++)
-        {
-            printf("   ");
-        }
-        if (i + 1 < size)
-        {
-            printf("\n");
-        }
-    }
-    printf("  ");
+    //for (int i = 0; i < size; i++)
+    //{
+    //    if (i % DUMP_WIDTH == 0 && i == 0)
+    //    {
+    //        printf("%s: (%02x)", IO_DIRECTION_TAG(io_direction), size);
+    //    }
+    //    else
+    //    {
+    //        printf("          ");
+    //    }
+    //    int j = 0;
+    //    for (; j < DUMP_WIDTH && i < size; i++, j++)
+    //    {
+    //        printf(" %02x", packet[i]);
+    //    }
+    //    for (; j < DUMP_WIDTH; j++)
+    //    {
+    //        printf("   ");
+    //    }
+    //    if (i + 1 < size)
+    //    {
+    //        printf("\n");
+    //    }
+    //}
+    //printf("  ");
 
     switch (acl_packet->type)
     {
@@ -803,7 +803,7 @@ void dump_packet(uint8_t io_direction, const uint8_t* packet, uint16_t size)
                     dump_qos_setup_complete((HCI_QOS_SETUP_COMPLETE_EVENT_PACKET*)packet);
                     break;
                 case HCI_EVENT_HARDWARE_ERROR:
-                    printf("hardware error\n");
+                    //printf("hardware error\n");
                     break;
                 case HCI_EVENT_ROLE_CHANGE:
                     dump_role_change((HCI_ROLE_CHANGE_EVENT_PACKET*)packet);
@@ -812,9 +812,11 @@ void dump_packet(uint8_t io_direction, const uint8_t* packet, uint16_t size)
                     dump_link_key_notification((HCI_LINK_KEY_NOTIFICATION_EVENT_PACKET*)packet);
                     break;
                 case HCI_EVENT_CONNECTION_COMPLETE:
+                    is_connected=1;
                     dump_connection_complete((HCI_CONNECTION_COMPLETE_EVENT_PACKET*)packet);
                     break;
                 case HCI_EVENT_DISCONNECTION_COMPLETE:
+                    is_connected=0;
                     dump_disconnection_complete((HCI_DISCONNECTION_COMPLETE_EVENT_PACKET*)packet);
                     break;
                 case HCI_EVENT_MODE_CHANGE:
@@ -824,16 +826,16 @@ void dump_packet(uint8_t io_direction, const uint8_t* packet, uint16_t size)
                     dump_encryption_change((HCI_ENCRYPTION_CHANGE_EVENT_PACKET*)packet);
                     break;
                 default:
-                    printf("%s\n", get_hci_event_name(event_packet->event_code));
+                    //printf("%s\n", get_hci_event_name(event_packet->event_code));
                     break;
             }
             break;
         case HCI_ACL_PACKET_TYPE:
         {
-            if (acl_packet->broadcast_flag != 0)
-            {
-                printf("~~~~~~~~~~~~~~~~~~~~~~broadcast_flag %0x~~~~~~~~~~~~~~~~\n", acl_packet->broadcast_flag);
-            }
+            //if (acl_packet->broadcast_flag != 0)
+            //{
+            //    printf("~~~~~~~~~~~~~~~~~~~~~~broadcast_flag %0x~~~~~~~~~~~~~~~~\n", acl_packet->broadcast_flag);
+            //}
 
             uint16_t local_channel = l2cap_packet->channel;
             if (acl_packet->packet_boundary_flag == L2CAP_PB_FRAGMENT)
@@ -875,7 +877,7 @@ void dump_packet(uint8_t io_direction, const uint8_t* packet, uint16_t size)
                     //     printf("sdp\n");
                     //     break;
                     default:
-                        printf("l2cap channel 0x%x con_handle 0x%x\n", l2cap_packet->channel, l2cap_packet->con_handle);
+                        //printf("l2cap channel 0x%x con_handle 0x%x\n", l2cap_packet->channel, l2cap_packet->con_handle);
                         break;
                 }
             }
@@ -887,20 +889,21 @@ void dump_packet(uint8_t io_direction, const uint8_t* packet, uint16_t size)
                     //     printf("sdp\n");
                     //     break;
                     default:
-                        printf("acl fragment channel 0x%x con_handle 0x%x\n", last_channel[io_direction - 1], l2cap_packet->con_handle);
+                        //printf("acl fragment channel 0x%x con_handle 0x%x\n", last_channel[io_direction - 1], l2cap_packet->con_handle);
                         break;
                 }
             }
             else
             {
-                printf("bad packet_boundary_flag 0x%x\n", acl_packet->packet_boundary_flag);
+                //printf("bad packet_boundary_flag 0x%x\n", acl_packet->packet_boundary_flag);
             }
 
 
             break;
         }
         default:
-            printf("unhandled packet type 0x%02x\n", acl_packet->type);
+            //printf("unhandled packet type 0x%02x\n", acl_packet->type);
             break;
     }
 }
+

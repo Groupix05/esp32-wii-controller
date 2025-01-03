@@ -1,0 +1,910 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: main_task at /home/deck/esp/esp-idf/components/freertos/app_startup.c:208
+0x4009027e: vPortTaskWrapper at /home/deck/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+[0m
+[0;33m--- 0x4000c46c: memset in ROM
+0x4000c477: memset in ROM
+[0m
+[0;33m--- 0x4000c469: memset in ROM
+0x400db799: Adafruit_SSD1306::clearDisplay() at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/components/arduino-esp32/libraries/Adafruit_SSD1306/Adafruit_SSD1306.cpp:683
+0x400d7e47: app_main at /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/main/main.cpp:109
+0x40111188: ma

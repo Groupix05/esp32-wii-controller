@@ -1,5 +1,198 @@
 #include "wii_controller.h"
 
+//init var
+bool home_button=0;
+bool minus_button=0;
+bool plus_button=0;
+bool a_button=0;
+bool b_button=0;
+bool one_button=0;
+bool two_button=0;
+bool up_button=0;
+bool down_button=0;
+bool left_button=0;
+bool right_button=0;
+unsigned char player_number_led=0;
+bool wii_searching=0;
+bool power_button=0;
+bool wii_power_state=0;
+bool joystick_mode=0;
+unsigned char battery=25;
+unsigned char wii_battery=0;
+float acc_x=0;
+float acc_y=0;
+float acc_z=0;
+unsigned long int wii_x=0;
+unsigned long int wii_y=0;
+unsigned long int wii_z=0;
+uint16_t ir_x = 435;//center of the screen
+uint16_t ir_y = 320;//center of the screen
+uint8_t status_report[8] = {0xA1, 0x20, 0x00, 0x00, 0x1C, 0x00, 0x00, 0xFF};
+uint8_t report_33[19] = {0xA1, 0x33, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+uint8_t report_31[7] = {0xA1, 0x31, 0x00, 0x00, 0x00, 0x00, 0x00};
+
+long floatmap(float x, float in_min, float in_max, long out_min, long out_max)
+{
+      return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+void red(void){
+  printf("\e[91m");
+}
+
+void blue(void) {
+  printf("\e[34m");
+}
+
+void reset_color(void) {
+  printf("\033[0m\e[25\e[49m\e[22m");
+}
+
+void gray(void)
+{
+    printf("\e[90m");
+}
+
+void dim(void)
+{
+    printf("\e[2m");
+}
+
+void blink_color(void)
+{
+    printf("\e[5m");
+}
+
+void red_error(void)
+{
+    printf("\e[41m");
+}
+
+void orange(void)
+{
+    printf("\e[38;2;255;165;0m");
+}
+
+void detect_buttons(uint8_t* tab)
+{
+    if ((home_button == 1) && ((tab[2] & (WII_BUTTON_HOME & 0xFF)) == 0))         //home
+    {
+        tab[2] |= ((WII_BUTTON_HOME >> 8) & 0xFF);
+        tab[3] |= (WII_BUTTON_HOME & 0xFF);
+    }
+    else if(home_button == 0)
+    {
+        tab[2] &= ~((WII_BUTTON_HOME >> 8) & 0xFF);
+        tab[3] &= ~(WII_BUTTON_HOME & 0xFF);
+    }
+    if ((minus_button == 1) && ((tab[2] & (WII_BUTTON_MINUS & 0xFF)) == 0))         //minus
+    {
+        tab[2] |= ((WII_BUTTON_MINUS >> 8) & 0xFF);
+        tab[3] |= (WII_BUTTON_MINUS & 0xFF);
+    }
+    else if(minus_button == 0)
+    {
+        tab[2] &= ~((WII_BUTTON_MINUS >> 8) & 0xFF);
+        tab[3] &= ~(WII_BUTTON_MINUS & 0xFF);
+    }
+    if ((plus_button  == 1) && ((tab[2] & (WII_BUTTON_PLUS & 0xFF)) == 0))         //plus
+    {
+        tab[2] |= ((WII_BUTTON_PLUS >> 8) & 0xFF);
+        tab[3] |= (WII_BUTTON_PLUS & 0xFF);
+    }
+    else if(plus_button == 0)
+    {
+        tab[2] &= ~((WII_BUTTON_PLUS >> 8) & 0xFF);
+        tab[3] &= ~(WII_BUTTON_PLUS & 0xFF);
+    }
+    if ((a_button  == 1) && ((tab[2] & (WII_BUTTON_A & 0xFF)) == 0))         //a
+    {
+        tab[2] |= ((WII_BUTTON_A >> 8) & 0xFF);
+        tab[3] |= (WII_BUTTON_A & 0xFF);
+    }
+    else if(a_button == 0)
+    {
+        tab[2] &= ~((WII_BUTTON_A >> 8) & 0xFF);
+        tab[3] &= ~(WII_BUTTON_A & 0xFF);
+    }
+    if ((b_button  == 1) && ((tab[2] & (WII_BUTTON_B & 0xFF)) == 0))         //b
+    {
+        tab[2] |= ((WII_BUTTON_B >> 8) & 0xFF);
+        tab[3] |= (WII_BUTTON_B & 0xFF);
+    }
+    else if(b_button == 0)
+    {
+        tab[2] &= ~((WII_BUTTON_B >> 8) & 0xFF);
+        tab[3] &= ~(WII_BUTTON_B & 0xFF);
+    }
+    if ((one_button  == 1) && ((tab[2] & (WII_BUTTON_ONE & 0xFF)) == 0))         //one
+    {
+        tab[2] |= ((WII_BUTTON_ONE >> 8) & 0xFF);
+        tab[3] |= (WII_BUTTON_ONE & 0xFF);
+    }
+    else if(one_button == 0)
+    {
+        tab[2] &= ~((WII_BUTTON_ONE >> 8) & 0xFF);
+        tab[3] &= ~(WII_BUTTON_ONE & 0xFF);
+    }
+    if ((two_button  == 1) && ((tab[2] & (WII_BUTTON_TWO & 0xFF)) == 0))         //two
+    {
+        tab[2] |= ((WII_BUTTON_TWO >> 8) & 0xFF);
+        tab[3] |= (WII_BUTTON_TWO & 0xFF);
+    }
+    else if(two_button == 0)
+    {
+        tab[2] &= ~((WII_BUTTON_TWO >> 8) & 0xFF);
+        tab[3] &= ~(WII_BUTTON_TWO & 0xFF);
+    }
+    if ((up_button  == 1) && ((tab[2] & (WII_BUTTON_UP & 0xFF)) == 0))         //up
+    {
+        tab[2] |= ((WII_BUTTON_UP >> 8) & 0xFF);
+        tab[3] |= (WII_BUTTON_UP & 0xFF);
+    }
+    else if(up_button == 0)
+    {
+        tab[2] &= ~((WII_BUTTON_UP >> 8) & 0xFF);
+        tab[3] &= ~(WII_BUTTON_UP & 0xFF);
+    }
+    if ((down_button  == 1) && ((tab[2] & (WII_BUTTON_DOWN & 0xFF)) == 0))         //down
+    {
+        tab[2] |= ((WII_BUTTON_DOWN >> 8) & 0xFF);
+        tab[3] |= (WII_BUTTON_DOWN & 0xFF);
+    }
+    else if(down_button == 0)
+    {
+        tab[2] &= ~((WII_BUTTON_DOWN >> 8) & 0xFF);
+        tab[3] &= ~(WII_BUTTON_DOWN & 0xFF);
+    }
+    if ((left_button  == 1) && ((tab[2] & (WII_BUTTON_LEFT & 0xFF)) == 0))         //left
+    {
+        tab[2] |= ((WII_BUTTON_LEFT >> 8) & 0xFF);
+        tab[3] |= (WII_BUTTON_LEFT & 0xFF);
+    }
+    else if(left_button == 0)
+    {
+        tab[2] &= ~((WII_BUTTON_LEFT >> 8) & 0xFF);
+        tab[3] &= ~(WII_BUTTON_LEFT & 0xFF);
+    }
+    if ((right_button  == 1) && ((tab[2] & (WII_BUTTON_RIGHT & 0xFF)) == 0))         //right
+    {
+        tab[2] |= ((WII_BUTTON_RIGHT >> 8) & 0xFF);
+        tab[3] |= (WII_BUTTON_RIGHT & 0xFF);
+    }
+    else if(right_button == 0)
+    {
+        tab[2] &= ~((WII_BUTTON_RIGHT >> 8) & 0xFF);
+        tab[3] &= ~(WII_BUTTON_RIGHT & 0xFF);
+    }
+    if(power_button  == 1)
+    {
+        connect_and_power_off();
+    }
+}
+
+
+
 #ifdef _WINDOWS_
 typedef
 {
@@ -140,6 +333,7 @@ int queue_packet_handler(uint8_t* packet, uint16_t size)
 
     if (xQueueSend(queue_handle, &env, 0) != pdPASS)
     {
+        is_connected=0;
         printf("queue full (recv)\n");
         xQueueSend(queue_handle, &env, portMAX_DELAY);
     }
@@ -153,6 +347,7 @@ void post_bt_packet(BT_PACKET_ENVELOPE* env)
     if (xQueueSend(queue_handle, &env, 0) != pdPASS)
     {
         printf("queue full (send)\n");
+        is_connected=0;
         xQueueSend(queue_handle, &env, portMAX_DELAY);
     }
 }
@@ -312,7 +507,7 @@ void wii_controller_packet_handler(uint8_t* packet, uint16_t size)
                 //     handle_encryption_change((HCI_ENCRYPTION_CHANGE_EVENT_PACKET*)packet);
                 //     break;
                 default:
-                    printf("%s\n", get_hci_event_name(event_packet->event_code));
+                    //printf("%s\n", get_hci_event_name(event_packet->event_code));
                     break;
             }
             break;
@@ -331,12 +526,12 @@ void open_data_channel(uint16_t con_handle)
 
 void post_hid_report_packet(uint16_t con_handle, const uint8_t* report, uint16_t report_size)
 {
-    printf("send hid report \"");
-    for (int i = 0; i < report_size; i++)
-    {
-        printf("\\x%02x", report[i]);
-    }
-    printf("\", %u\n", report_size);
+    //printf("send hid report \"");
+    //for (int i = 0; i < report_size; i++)
+    //{
+    //    printf("\\x%02x", report[i]);
+    //}
+    //printf("\", %u\n", report_size);
 
     post_bt_packet(create_l2cap_packet(con_handle, L2CAP_AUTO_SIZE, wii_controller.data_cid, report, report_size));
 }
@@ -349,12 +544,12 @@ void post_sdp_packet(uint16_t con_handle, uint16_t l2cap_size, uint8_t* data, ui
     sdp_packet_index++;
     sdp_fragment_index = 0;
 
-    printf("sdp request %d.%d \"", sdp_packet_index, sdp_fragment_index);
-    for (int i = 0; i < data_size; i++)
-    {
-        printf("\\x%02x", data[i]);
-    }
-    printf("\", %u\n", data_size);
+    //printf("sdp request %d.%d \"", sdp_packet_index, sdp_fragment_index);
+    //for (int i = 0; i < data_size; i++)
+    //{
+    //    printf("\\x%02x", data[i]);
+    //}
+    //printf("\", %u\n", data_size);
 
     post_bt_packet(create_l2cap_packet(con_handle, l2cap_size, wii_controller.sdp_cid, data, data_size));
 }
@@ -363,12 +558,12 @@ void post_sdp_packet_fragment(uint16_t con_handle, uint8_t* data, uint16_t data_
 {
     sdp_fragment_index++;
 
-    printf("sdp request %d.%d \"", sdp_packet_index, sdp_fragment_index);
-    for (int i = 0; i < data_size; i++)
-    {
-        printf("\\x%02x", data[i]);
-    }
-    printf("\", %u\n", data_size);
+    //printf("sdp request %d.%d \"", sdp_packet_index, sdp_fragment_index);
+    //for (int i = 0; i < data_size; i++)
+    //{
+    //    printf("\\x%02x", data[i]);
+    //}
+    //printf("\", %u\n", data_size);
 
     post_bt_packet(create_acl_packet(con_handle, wii_controller.sdp_cid, L2CAP_PB_FRAGMENT, L2CAP_BROADCAST_NONE, data, data_size));
 }

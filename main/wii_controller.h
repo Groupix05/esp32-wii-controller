@@ -25,9 +25,6 @@
 #include "bthci.h"
 #include "btdump.h"
 
-void connect_and_power_on();
-void connect_and_power_off();
-
 void wii_controller_init();
 int queue_packet_handler(uint8_t* packet, uint16_t size);
 void post_bt_packet(BT_PACKET_ENVELOPE* packet);
@@ -51,6 +48,22 @@ void post_sdp_packet_fragment(uint16_t con_handle, uint8_t* data, uint16_t data_
 void post_l2ap_config_mtu_request(uint16_t con_handle, uint16_t remote_cid, uint16_t mtu);
 void post_l2ap_config_mtu_flush_timeout_request(uint16_t con_handle, uint16_t remote_cid, uint16_t mtu, uint16_t flush_timeout);
 void dump_l2cap_config_options(uint8_t* options, uint16_t options_size);
+
+void gray(void);
+void dim(void);
+void blink_color(void);
+void red(void);
+void blue(void);
+void red_error(void);
+void orange(void);
+void reset_color(void);
+void detect_buttons(uint8_t* tab);
+long floatmap(float x, float in_min, float in_max, long out_min, long out_max);
+
+void reconnect();
+void connect_and_power_off();
+void connect_and_power_on();
+void query_power_state();
 
 #define WII_ADDR_BLOB_NAME          "wii_addr"
 
@@ -103,12 +116,18 @@ void dump_l2cap_config_options(uint8_t* options, uint16_t options_size);
 
 #define WII_LED_REPORT                          0x11
 #define WII_DATA_REPORTING_MODE_REPORT          0x12
+#define WII_SPEAKER_ENABLE                      0x14
+#define WII_STATUS_INFORMATION_REPORT           0x15
 #define WII_READ_MEMORY_AND_REGISTERS_REPORT    0x17
+#define WII_SPEAKER_MUTE                        0x19
 
-#define WII_REMOTE_LED_1        0x10
-#define WII_REMOTE_LED_2        0x20
-#define WII_REMOTE_LED_3        0x40
-#define WII_REMOTE_LED_4        0x80
+#define WII_REMOTE_LED_1        0x1
+#define WII_REMOTE_LED_2        0x2
+#define WII_REMOTE_LED_3        0x4
+#define WII_REMOTE_LED_4        0x8
+
+#define MICROPHONE_BIT         0x04
+#define IR_BIT                 0x08
 
 typedef enum
 {
@@ -116,6 +135,8 @@ typedef enum
     WII_CONSOLE_PAIRING_STARTED,
     WII_CONSOLE_PAIRING_COMPLETE,
     WII_CONSOLE_POWER_ON_PENDING,
+    WII_CONSOLE_RECONNECTION_PENDING,
+    WII_CONSOLE_RECONNECTION_STARTED,
     WII_CONSOLE_POWER_OFF_PENDING,
     WII_CONSOLE_POWER_OFF_CONNECTED,
     WII_CONSOLE_QUERY_POWER_STATE,
@@ -196,12 +217,38 @@ typedef struct _FOUND_DEVICE
 #pragma pack(pop)
 #endif
 
-
-
 extern WII_CONTROLLER wii_controller;
 //extern xSemaphoreHandle all_controller_buffers_sem;
 extern bd_addr_t wii_addr;
 extern bd_addr_t device_addr;
+extern bool home_button;
+extern bool minus_button;
+extern bool plus_button;
+extern bool a_button;
+extern bool b_button;
+extern bool one_button;
+extern bool two_button;
+extern bool up_button;
+extern bool down_button;
+extern bool left_button;
+extern bool right_button;
+extern bool power_button;
+extern bool wii_searching;
+extern bool wii_power_state;
+extern bool joystick_mode;
+extern unsigned char battery;
+extern unsigned char wii_battery;
+extern uint16_t ir_x;
+extern uint16_t ir_y;
+extern float acc_x;
+extern float acc_y;
+extern float acc_z;
+extern unsigned long int wii_x;//10bits
+extern unsigned long int wii_y;//9bits
+extern unsigned long int wii_z;//9bits
+extern unsigned char player_number_led;
+extern uint8_t status_report[8];
+extern uint8_t report_33[19];
+extern uint8_t report_31[7];
 
 //extern portMUX_TYPE dump_mux;
-

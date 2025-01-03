@@ -1,0 +1,57 @@
+[1/5] cd /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/build/esp-idf/esptool_py && /home/deck/.espressif/python_env/idf5.3_py3.11_env/bin/python /home/deck/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/build/partition_table/partition-table.bin /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/build/wii_controller.bin
+wii_controller.bin binary size 0x78200 bytes. Smallest app partition is 0x100000 bytes. 0x87e00 bytes (53%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/build/bootloader/esp-idf/esptool_py && /home/deck/.espressif/python_env/idf5.3_py3.11_env/bin/python /home/deck/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/build/bootloader/bootloader.bin
+Bootloader binary size 0x6060 bytes. 0xfa0 bytes (14%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/deck/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/deck/esp/esp-idf -D "SERIAL_TOOL=/home/deck/.espressif/python_env/idf5.3_py3.11_env/bin/python;;/home/deck/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/deck/Documents/PlatformIO/esp32-wii-controller-with-components/build -P /home/deck/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 wii_controller.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/ttyUSB0
+Connecting.....
+Chip is ESP32-D0WDQ6-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: c8:c9:a3:fc:b9:c4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00088fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 24672 bytes to 15273...
+Writing at 0x00001000... (100 %)
+Wrote 24672 bytes (15273 compressed) at 0x00001000 in 0.4 seconds (effective 480.1 kbit/s)...
+Hash of data verified.
+Compressed 492032 bytes to 269026...
+Writing at 0x00010000... (5 %)
+Writing at 0x000227b4... (11 %)
+Writing at 0x0002da93... (17 %)
+Writing at 0x0003347e... (23 %)
+Writing at 0x00039498... (29 %)
+Writing at 0x0003f3b3... (35 %)
+Writing at 0x000458dd... (41 %)
+Writing at 0x0004b792... (47 %)
+Writing at 0x00051007... (52 %)
+Writing at 0x00056eb0... (58 %)
+Writing at 0x0005ccfe... (64 %)
+Writing at 0x00062b85... (70 %)
+Writing at 0x0006cc29... (76 %)
+Writing at 0x00073c76... (82 %)
+Writing at 0x00079744... (88 %)
+Writing at 0x0007f42e... (94 %)
+Writing at 0x00085724... (100 %)
+Wrote 492032 bytes (269026 compressed) at 0x00010000 in 6.1 seconds (effective 648.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1876.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

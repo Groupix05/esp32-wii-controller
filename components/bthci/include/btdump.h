@@ -12,5 +12,6 @@ uint32_t uint24_bytes_to_uint32(const uint8_t* cod);
 void dump_packet(uint8_t io_direction, const uint8_t* packet, uint16_t size);
 const char* get_hci_event_name(uint16_t event_code);
 const char* get_hci_op_code_name(uint16_t op_code);
+extern char is_connected;
 
 #endif
