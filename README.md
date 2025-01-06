@@ -17,3 +17,6 @@ Electrical Plan and PCB made entirely by Geekoje.
 - 8 buttons
 - 4 Green LEDS
 - resistors (check pdf)
+
+## Note
+The connection of the Distance Sensor VL53L1X is inverted in the PCB V1 
