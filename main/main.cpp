@@ -403,9 +403,34 @@ void sensors_and_display()
     acc_x = event.acceleration.x;
     acc_z = event.acceleration.z+10;
     acc_y = event.acceleration.y;
-    wii_x = floatmap(acc_x,-10,10,0,1023);    //lags
-    wii_z = floatmap(acc_z,-10,10,0,511);     //lags
-    wii_y = floatmap(acc_y,-10,10,0,511);     //lags
+    if(acc_x>10)
+    {
+        acc_x = 10;
+    }
+    else if(acc_x<-10)
+    {
+        acc_x=-10;
+    }
+    if(acc_y>10)
+    {
+        acc_y = 10;
+    }
+    else if(acc_y<-10)
+    {
+        acc_y=-10;
+    }
+    if(acc_z>10)
+    {
+        acc_z = 10;
+    }
+    else if(acc_z<-10)
+    {
+        acc_z=-10;
+    }
+    wii_x = floatmap(acc_x,-10,10,1023,0);    //lags
+    wii_y = floatmap(acc_y,-10,10,1023,0);     //lags
+    wii_z = floatmap(acc_z,-10,10,0,1023);     //lags
+
     //wii_y=wii_y+10;
     //if(wii_y>511)
     //{

@@ -695,15 +695,15 @@ void continous_reporting_task(void* p)
         {
             detect_buttons(report_31);
 
-            report_31[4] = ((wii_x)>>4);//Accelerometer
+            report_31[4] = ((wii_x)>>2);//Accelerometer
             report_31[2] = (report_31[2] & ~((1 << 6) | (1 << 5)))
-               | (((wii_x & 0x004)>>2) << 6)
-               | (((wii_x & 0x002)>>1) << 5);
+               | (((wii_x & 0x002)>>1) << 6)
+               | (((wii_x & 0x001)) << 5);
 
-            report_31[5] = ((wii_y)>>4);//Accelerometer
-            report_31[3] = (report_31[3] & ~(1 << 5)) | (((wii_y & 0x004)>>2) << 5);
-            report_31[6] = ((wii_z)>>4);//Accelerometer
-            report_31[3] = (report_31[3] & ~(1 << 6)) | (((wii_z & 0x004)>>2) << 6);
+            report_31[5] = ((wii_y)>>2);//Accelerometer
+            report_31[3] = (report_31[3] & ~(1 << 5)) | (((wii_y & 0x002)>>1) << 5);
+            report_31[6] = ((wii_z)>>2);//Accelerometer
+            report_31[3] = (report_31[3] & ~(1 << 6)) | (((wii_z & 0x002)>>1) << 6);
 
 
             report_33[2]=report_31[2];
@@ -718,7 +718,7 @@ void continous_reporting_task(void* p)
             printf("\n");
 
         }
-        vTaskDelay(32 / portTICK_PERIOD_MS);
+        vTaskDelay(16 / portTICK_PERIOD_MS);
 
     }
 }
