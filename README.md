@@ -35,11 +35,13 @@ Select the instructions depending on Espressif chip installed on your developmen
 - [ESP32 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/stable/get-started/index.html)
 - [ESP32-S2 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/get-started/index.html)
 
+(not required anymore)
 Then run in the project folder:
 - cd components
 - git clone --recursive https://github.com/espressif/arduino-esp32.git
 - cd arduino-esp32
 - git checkout 3.1.0-RC2
+
 
 Manual transfer:
 In the root :
