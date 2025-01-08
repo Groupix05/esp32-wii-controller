@@ -235,17 +235,17 @@ extern bool right_button;
 extern bool power_button;
 extern bool wii_searching;
 extern bool wii_power_state;
-extern bool joystick_mode;
-extern unsigned char battery;
-extern unsigned char wii_battery;
+extern bool joystick_mode;//IR or DPAD
+extern unsigned char battery;//between 0 and 100%
+extern unsigned char wii_battery;//battery converted between 0 and 255
 extern uint16_t ir_x;
 extern uint16_t ir_y;
-extern float acc_x;
-extern float acc_y;
-extern float acc_z;
+extern float acc_x;//accelerometer
+extern float acc_y;//accelerometer
+extern float acc_z;//accelerometer
 extern unsigned long int wii_x;//10bits
-extern unsigned long int wii_y;//9bits
-extern unsigned long int wii_z;//9bits
+extern unsigned long int wii_y;//10bits
+extern unsigned long int wii_z;//10bits
 extern unsigned char player_number_led;
 extern uint8_t status_report[8];
 extern uint8_t report_33[19];
