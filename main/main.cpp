@@ -427,9 +427,9 @@ void sensors_and_display()
     {
         acc_z=-10;
     }
-    wii_x = floatmap(acc_x,-10,10,1023,0);    //lags
-    wii_y = floatmap(acc_y,-10,10,1023,0);     //lags
-    wii_z = floatmap(acc_z,-10,10,0,1023);     //lags
+    wii_x = ((unsigned long)((acc_x/16)*3))&0x03FF;
+    wii_y = ((unsigned long)((acc_y/16)*3))&0x03FF;
+    wii_z = ((unsigned long)((acc_z/16)*3))&0x03FF;
 
     //wii_y=wii_y+10;
     //if(wii_y>511)
