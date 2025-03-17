@@ -22,9 +22,12 @@ unsigned char wii_battery=0;
 float acc_x=0;
 float acc_y=0;
 float acc_z=0;
-unsigned long int wii_x=0;
-unsigned long int wii_y=0;
-unsigned long int wii_z=0;
+int16_t int_x;//accelerometer
+int16_t int_y;//accelerometer
+int16_t int_z;//accelerometer
+uint16_t wii_x=0;
+uint16_t wii_y=0;
+uint16_t wii_z=0;
 uint16_t ir_x = 435;//center of the screen
 uint16_t ir_y = 320;//center of the screen
 uint8_t status_report[8] = {0xA1, 0x20, 0x00, 0x00, 0x1C, 0x00, 0x00, 0xFF};

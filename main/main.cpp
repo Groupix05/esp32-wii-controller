@@ -18,10 +18,13 @@ void leds(char pinled_1,char pinled_2,char pinled_3,char pinled_4);
 void buttons(char pin_button_home,char pin_button_minus,char pin_button_plus,char pin_button_a,char pin_button_b,char pin_button_one,char pin_button_two,char pin_button_power);
 void ir(char pin_stick_x,char pin_stick_y);
 void d_pad(char pin_stick_x,char pin_stick_y);
+void auto_stike();
 VL53L1X sensor;
 Adafruit_SSD1306 display(SCREEN_WIDTH,SCREEN_HEIGHT,&Wire,-1);
 Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified(12345);
-bool loup=1;
+bool auto_stike_bool=0;
+int auto_strike_var=0;
+unsigned long int timer_auto_stike=0;
 unsigned long int timer=0;
 int ADXL345 = 0x53;
 sensors_event_t event;
@@ -65,14 +68,7 @@ void app_main(void)
     addr[4] = 0xd1;
     addr[5] = 0xa0;
 #endif
-    if(loup==1)
-    {
-        addr[1] = 0x20;
-    }
-    else
-    {
-        addr[1] = 0x19;
-    }
+    addr[1] = 0x20;
 
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND)
@@ -122,43 +118,46 @@ void app_main(void)
         {
             if(is_connected==1)
             {
-                if(loup==1)
-                {
-                    buttons(12,14,27,34,19,15,13,4);
-                }
-                else
-                {
-                    buttons(0,14,27,34,19,15,13,4);
-                }
-                if(joystick_mode==0)
-                {
-                    ir(25,26);
-                }
-                else
-                {
-                    d_pad(25,26);
-                }
-                if((digitalRead(33)==LOW)&&(button_mode==0))
-                {
-                    button_mode=1;
-                    joystick_mode=!joystick_mode;
+                if(auto_stike_bool==0){
+                    buttons(12,14,16,34,1,15,13,4);
                     if(joystick_mode==0)
                     {
-                        ir_x = 435;
-                        ir_y = 320;
+                        ir(25,26);
                     }
                     else
                     {
-                        ir_x = 0;
-                        ir_y = 0;
+                        d_pad(25,26);
                     }
+                    if((digitalRead(33)==LOW)&&(button_mode==0))
+                    {
+                        button_mode=1;
+                        joystick_mode=!joystick_mode;
+                        if(joystick_mode==0)
+                        {
+                            ir_x = 435;
+                            ir_y = 320;
+                        }
+                        else
+                        {
+                            ir_x = 0;
+                            ir_y = 0;
+                        }
+                    }
+                    else if(digitalRead(33)==HIGH)
+                    {
+                        button_mode=0;
+                    }
+                    if(power_button==1)
+                    {
+                        timer_auto_stike = millis();
+                        auto_stike_bool=1;
+                    }
+                    //sensors
+                    sensors_and_display();
                 }
-                else if(digitalRead(33)==HIGH)
-                {
-                    button_mode=0;
+                else{
+                    auto_stike();
                 }
-                //sensors
-                sensors_and_display();
             }
             //else if((is_connected==0) || ((millis()-timer>=2000)&&(is_connected==2)))
             //{
@@ -168,14 +167,7 @@ void app_main(void)
             //    reconnect();
             //}
         }
-        if(loup==1)
-        {
-            leds(32,23,18,5);
-        }
-        else
-        {
-            leds(2,23,18,5);
-        }
+        leds(32,23,18,5);
         wii_display();
         wii_battery=map(battery,0,100,0,255);
     }
@@ -187,13 +179,13 @@ void app_main(void)
 
 void ArduinoSetup()
 {
-    pinMode(25,INPUT);   //JOYSTICK X
-    pinMode(26,INPUT);   //JOYSTICK Y
+    pinMode(25,INPUT);  //JOYSTICK X
+    pinMode(26,INPUT);  //JOYSTICK Y
     pinMode(12,INPUT);  //BUTTON HOME
     pinMode(14,INPUT);  //BUTTON MINUS
-    pinMode(27,INPUT);  //BUTTON PLUS
+    pinMode(16,INPUT);  //BUTTON PLUS
     pinMode(34,INPUT);  //BUTTON A
-    pinMode(19,INPUT);  //BUTTON B
+    pinMode(1,INPUT);   //BUTTON B
     pinMode(15,INPUT);  //BUTTON ONE
     pinMode(13,INPUT);  //BUTTON TWO
     pinMode(4,INPUT);   //BUTTON POWER
@@ -213,10 +205,7 @@ void ArduinoSetup()
     pinMode(2,OUTPUT);  //LED ESP32
     Wire.begin();
     pinMode(33,INPUT);  //BUTTON STICK
-    if(loup==1)
-    {
-        start_external_sensors();
-    }
+    start_external_sensors();
     start_display();
 }
 void start_external_sensors()
@@ -400,36 +389,42 @@ void wii_display()
 void sensors_and_display()
 {
     accel.getEvent(&event);
-    acc_x = event.acceleration.x;
-    acc_z = event.acceleration.z+10;
-    acc_y = event.acceleration.y;
-    if(acc_x>10)
-    {
-        acc_x = 10;
-    }
-    else if(acc_x<-10)
-    {
-        acc_x=-10;
-    }
-    if(acc_y>10)
-    {
-        acc_y = 10;
-    }
-    else if(acc_y<-10)
-    {
-        acc_y=-10;
-    }
-    if(acc_z>10)
-    {
-        acc_z = 10;
-    }
-    else if(acc_z<-10)
-    {
-        acc_z=-10;
-    }
-    wii_x = ((unsigned long)((acc_x/16)*3))&0x03FF;
-    wii_y = ((unsigned long)((acc_y/16)*3))&0x03FF;
-    wii_z = ((unsigned long)((acc_z/16)*3))&0x03FF;
+    int_x = event.acceleration.x;
+    int_y = event.acceleration.y;
+    int_z = event.acceleration.z;
+    int_x = (int_x * 3 + 2) / 4;
+    int_y = (int_y * 3 + 2) / 4;
+    int_z = (int_z * 3 + 2) / 4;
+    // if(acc_x>10)
+    // {
+    //     acc_x = 10;
+    // }
+    // else if(acc_x<-10)
+    // {
+    //     acc_x=-10;
+    // }
+    // if(acc_y>10)
+    // {
+    //     acc_y = 10;
+    // }
+    // else if(acc_y<-10)
+    // {
+    //     acc_y=-10;
+    // }
+    // if(acc_z>10)
+    // {
+    //     acc_z = 10;
+    // }
+    // else if(acc_z<-10)
+    // {
+    //     acc_z=-10;
+    // }
+    //wii_x = ((unsigned long)((acc_x/16)*3))&0x03FF;
+    //wii_y = ((unsigned long)((acc_y/16)*3))&0x03FF;
+    //wii_z = ((unsigned long)((acc_z/16)*3))&0x03FF;
+    wii_x = ((int_x >> 1) + 512) & 0x03FF;
+    wii_y = ((int_y >> 1) + 512) & 0x03FF;
+    wii_z = ((int_z >> 1) + 512) & 0x03FF;
 
     //wii_y=wii_y+10;
     //if(wii_y>511)
@@ -439,18 +434,18 @@ void sensors_and_display()
     //printf("%02lx",wii_x);
     //printf("acc_x = %ld\n",acc_x_ld);
 
-    display.setCursor(0,25);
-    display.print("Z=");
-    display.setCursor(15,25);
-    display.println(wii_z);
-    display.setCursor(0,35);
-    display.print("X=");
-    display.setCursor(15,35);
-    display.println(wii_x);
-    display.setCursor(0,45);
-    display.print("Y=");
-    display.setCursor(15,45);
-    display.println(wii_y);
+    // display.setCursor(0,25);
+    // display.print("Z=");
+    // display.setCursor(15,25);
+    // display.println(wii_z);
+    // display.setCursor(0,35);
+    // display.print("X=");
+    // display.setCursor(15,35);
+    // display.println(wii_x);
+    // display.setCursor(0,45);
+    // display.print("Y=");
+    // display.setCursor(15,45);
+    // display.println(wii_y);
 
     //display.setCursor(75,25);
     //display.println(analogRead(25));
@@ -608,12 +603,12 @@ void d_pad(char pin_stick_x,char pin_stick_y)
 {
     long int stick_x = analogRead(pin_stick_x);
     long int stick_y = analogRead(pin_stick_y);
-    if(stick_x<1800)
+    if(stick_x<1000)
     {
         right_button=0;
         left_button=1;
     }
-    else if(stick_x>2100)
+    else if(stick_x>3000)
     {
         left_button=0;
         right_button=1;
@@ -623,12 +618,12 @@ void d_pad(char pin_stick_x,char pin_stick_y)
         right_button=0;
         left_button=0;
     }
-    if(stick_y<1800)
+    if(stick_y<1000)
     {
         up_button=0;
         down_button=1;
     }
-    else if(stick_y>2100)
+    else if(stick_y>3000)
     {
         down_button=0;
         up_button=1;
@@ -637,5 +632,72 @@ void d_pad(char pin_stick_x,char pin_stick_y)
     {
         up_button=0;
         down_button=0;
+    }
+}
+
+void auto_stike(){
+    if(millis()-timer_auto_stike<1100 && auto_strike_var==0){
+        if(joystick_mode==0){
+            joystick_mode=1;
+        }
+        b_button=0;
+        left_button=1;
+        right_button=0;
+        up_button=0;
+        down_button=0;
+    }
+    else if(auto_strike_var==0){
+        timer_auto_stike=millis();
+        auto_strike_var=1;
+    }
+
+    else if(millis()-timer_auto_stike<450 && auto_strike_var==1){
+        if(a_button==0){
+            a_button=1;
+        }
+        left_button=0;
+        right_button=1;
+        up_button=0;
+        down_button=0;
+    }
+    else if(auto_strike_var==1){
+        timer_auto_stike=millis();
+        auto_strike_var=2;
+    }
+
+    else if(millis()-timer_auto_stike<10 && auto_strike_var==2){
+        if(a_button==1){
+            a_button=0;
+        }
+        wii_x=511;
+        wii_y=600;
+        wii_z=511;
+    }
+    else if(auto_strike_var==2){
+        timer_auto_stike=millis();
+        auto_strike_var=3;
+    }
+
+    else if(millis()-timer_auto_stike<1500 && auto_strike_var==3){
+        b_button=1;
+    }
+    else if(auto_strike_var==3){
+        timer_auto_stike=millis();
+        auto_strike_var=4;
+    }
+    else if(millis()-timer_auto_stike<500 && auto_strike_var==4){
+        wii_y-=40;
+        wii_x-=30;
+    }
+    else if(auto_strike_var==4){
+        b_button=0;
+        auto_strike_var = 5;
+    }
+    else if(millis()-timer_auto_stike<700 && auto_strike_var==5){
+        //wii_x-=20;
+    }
+    else if(auto_strike_var==5){
+        auto_stike_bool = 0;
+        auto_strike_var = 0;
     }
 }

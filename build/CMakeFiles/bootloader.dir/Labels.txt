@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/deck/Documents/GitHub/esp32-wii-controller/build/CMakeFiles/bootloader
+/home/deck/Documents/GitHub/esp32-wii-controller/build/CMakeFiles/bootloader.rule
+/home/deck/Documents/GitHub/esp32-wii-controller/build/CMakeFiles/bootloader-complete.rule
+/home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

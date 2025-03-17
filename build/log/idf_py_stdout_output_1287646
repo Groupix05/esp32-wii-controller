@@ -1,0 +1,75 @@
+[1/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/RainMaker/src/AppInsights.cpp.obj
+[2/64] Performing build step for 'bootloader'
+[1/1] cd /home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader/esp-idf/esptool_py && /home/deck/.espressif/python_env/idf5.3_py3.11_env/bin/python /home/deck/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader/bootloader.bin
+Bootloader binary size 0x6060 bytes. 0xfa0 bytes (14%) free.
+[3/64] Building C object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/SD/src/sd_diskio_crc.c.obj
+[4/64] No install step for 'bootloader'
+[5/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/SimpleBLE/src/SimpleBLE.cpp.obj
+[6/64] Completed 'bootloader'
+[7/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/RainMaker/src/RMakerType.cpp.obj
+[8/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/RainMaker/src/RMakerDevice.cpp.obj
+[9/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/RainMaker/src/RMakerUtils.cpp.obj
+[10/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/Ticker/src/Ticker.cpp.obj
+[11/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/RainMaker/src/RMakerQR.cpp.obj
+[12/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/USB/src/USBHID.cpp.obj
+[13/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/SPI/src/SPI.cpp.obj
+[14/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/USB/src/USBHIDMouse.cpp.obj
+[15/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/USB/src/USBMIDI.cpp.obj
+[16/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/SD/src/sd_diskio.cpp.obj
+[17/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/USB/src/USBHIDKeyboard.cpp.obj
+[18/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/USB/src/USBHIDGamepad.cpp.obj
+[19/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/USB/src/USBHIDSystemControl.cpp.obj
+[20/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/USB/src/USBHIDConsumerControl.cpp.obj
+[21/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/USB/src/USBHIDVendor.cpp.obj
+[22/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/Adafruit_ADXL345/Adafruit_ADXL345_U.cpp.obj
+[23/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/USB/src/USBVendor.cpp.obj
+[24/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/WebServer/src/detail/mimetable.cpp.obj
+[25/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/Update/src/HttpsOTAUpdate.cpp.obj
+[26/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/SD_MMC/src/SD_MMC.cpp.obj
+[27/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/SD/src/SD.cpp.obj
+[28/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/Update/src/Updater.cpp.obj
+[29/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/SPIFFS/src/SPIFFS.cpp.obj
+[30/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/NetworkClientSecure/src/ssl_client.cpp.obj
+/home/deck/Documents/GitHub/esp32-wii-controller/components/arduino-esp32/libraries/NetworkClientSecure/src/ssl_client.cpp:23:2: warning: #warning "Please call `idf.py menuconfig` then go to Component config -> mbedTLS -> TLS Key Exchange Methods -> Enable pre-shared-key ciphersuites and then check `Enable PSK based ciphersuite modes`. Save and Quit." [-Wcpp]
+   23 | #warning \
+      |  ^~~~~~~
+[31/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/WiFi/src/WiFiAP.cpp.obj
+[32/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/WiFi/src/WiFi.cpp.obj
+[33/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/WebServer/src/Parsing.cpp.obj
+[34/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/NetworkClientSecure/src/NetworkClientSecure.cpp.obj
+[35/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/Zigbee/src/ZigbeeCore.cpp.obj
+[36/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/Zigbee/src/ZigbeeEP.cpp.obj
+[37/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/WiFi/src/WiFiGeneric.cpp.obj
+[38/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/Zigbee/src/ep/ZigbeeColorDimmableLight.cpp.obj
+[39/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/WebServer/src/WebServer.cpp.obj
+[40/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/Zigbee/src/ep/ZigbeeColorDimmerSwitch.cpp.obj
+[41/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/Zigbee/src/ep/ZigbeeLight.cpp.obj
+[42/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/Zigbee/src/ep/ZigbeeSwitch.cpp.obj
+[43/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/WiFi/src/WiFiScan.cpp.obj
+[44/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/Zigbee/src/ep/ZigbeeTempSensor.cpp.obj
+[45/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/Zigbee/src/ep/ZigbeeThermostat.cpp.obj
+[46/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/WiFi/src/WiFiSTA.cpp.obj
+[47/64] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wii_remote_host.c.obj
+[48/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/WiFi/src/WiFiMulti.cpp.obj
+[49/64] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wii_mitm.c.obj
+[50/64] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wii_controller.c.obj
+[51/64] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/fake_wii_remote.c.obj
+[52/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/Zigbee/src/ZigbeeHandlers.cpp.obj
+[53/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/Wire/src/Wire.cpp.obj
+[54/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/WiFi/src/STA.cpp.obj
+[55/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/WiFiProv/src/WiFiProv.cpp.obj
+[56/64] Building CXX object esp-idf/arduino-esp32/CMakeFiles/__idf_arduino-esp32.dir/libraries/WiFi/src/AP.cpp.obj
+[57/64] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+[58/64] Linking C static library esp-idf/arduino-esp32/libarduino-esp32.a
+[59/64] Linking C static library esp-idf/main/libmain.a
+[60/64] Generating ld/sections.ld
+[61/64] Building C object CMakeFiles/wii_controller.elf.dir/project_elf_src_esp32.c.obj
+[62/64] Linking CXX executable wii_controller.elf
+[63/64] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/deck/Documents/GitHub/esp32-wii-controller/build/wii_controller.bin
+[64/64] cd /home/deck/Documents/GitHub/esp32-wii-controller/build/esp-idf/esptool_py && /home/deck/.espressif/python_env/idf5.3_py3.11_env/bin/python /home/deck/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/deck/Documents/GitHub/esp32-wii-controller/build/partition_table/partition-table.bin /home/deck/Documents/GitHub/esp32-wii-controller/build/wii_controller.bin
+wii_controller.bin binary size 0x78300 bytes. Smallest app partition is 0x100000 bytes. 0x87d00 bytes (53%) free.

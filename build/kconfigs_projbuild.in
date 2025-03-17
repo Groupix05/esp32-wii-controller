@@ -1,0 +1,7 @@
+source "/home/deck/esp/esp-idf/components/bootloader/Kconfig.projbuild"
+source "/home/deck/esp/esp-idf/components/esp_app_format/Kconfig.projbuild"
+source "/home/deck/esp/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "/home/deck/esp/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "/home/deck/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+source "/home/deck/Documents/GitHub/esp32-wii-controller/components/arduino-esp32/Kconfig.projbuild"
+source "/home/deck/Documents/GitHub/esp32-wii-controller/managed_components/espressif__esp_rainmaker/Kconfig.projbuild"

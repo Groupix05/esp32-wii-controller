@@ -243,9 +243,12 @@ extern uint16_t ir_y;
 extern float acc_x;//accelerometer
 extern float acc_y;//accelerometer
 extern float acc_z;//accelerometer
-extern unsigned long int wii_x;//10bits
-extern unsigned long int wii_y;//10bits
-extern unsigned long int wii_z;//10bits
+extern int16_t int_x;//accelerometer
+extern int16_t int_y;//accelerometer
+extern int16_t int_z;//accelerometer
+extern uint16_t wii_x;//10bits
+extern uint16_t wii_y;//10bits
+extern uint16_t wii_z;//10bits
 extern unsigned char player_number_led;
 extern uint8_t status_report[8];
 extern uint8_t report_33[19];

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/deck/Documents/GitHub/esp32-wii-controller/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/home/deck/Documents/GitHub/esp32-wii-controller/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/home/deck/Documents/GitHub/esp32-wii-controller/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/home/deck/Documents/GitHub/esp32-wii-controller/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}
